@@ -17,7 +17,7 @@ app.get('/', function(req, res){
     res.render('index');
 });
 
-const port = process.env.PORT | config.port;
+const port = process.env.PORT || config.port;
 
 app.listen(port, function(req, res){
     console.log("app is running and listen the " + port + " port, please visit http://localhost:" + port);

@@ -2,6 +2,11 @@
     <head></head>
     <body>
         {{> nav}}
+        
         {{{body}}}
+
+        {{#if err}}
+            <h3>{{err}}</h3>
+        {{/if}}
     </body>
 </html>

@@ -17,8 +17,6 @@ app.get('/', function(req, res){
     res.render('index');
 });
 
-const port = process.env.PORT | config.port;
-
-app.listen(port, function(req, res){
-    console.log("app is running and listen the " + port + " port, please visit http://localhost:" + port);
+app.listen(config.port, function(req, res){
+    console.log("app is running and listen the " + config.port + " port, please visit http://localhost:" + config.port + ', current node env is ' + process.env.NODE_ENV);
 });

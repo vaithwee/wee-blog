@@ -1,16 +1,10 @@
 var mongoose = require('mongoose');
 var config = require('config-lite');
+var category = require('./models/category');
 
 mongoose.connect(config.mongo);
 
-var vacation = mongoose.Schema({
-    name: String,
-    slug: String,
-});
 
-var Vacation = mongoose.model('Vacation', vacation);
-
-var vaca = new Vacation();
-vaca.name = 'hello',
-    vaca.slug = 'world'
-vaca.save();
+var cate = new category();
+cate.name = "nodejs";
+cate.save();

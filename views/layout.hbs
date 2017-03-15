@@ -3,10 +3,11 @@
     <body>
         {{> nav}}
         
+          {{#if error}}
+            <h3>{{error}}</h3>
+        {{/if}}
         {{{body}}}
 
-        {{#if err}}
-            <h3>{{err}}</h3>
-        {{/if}}
+      
     </body>
 </html>

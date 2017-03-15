@@ -21,12 +21,11 @@ hbs.registerPartials(path.join(__dirname, 'views/partials'));
 
 app.use(express.static(path.join(__dirname, 'public')));
 
-app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({ extended: false }));
+
 
 app.use(session({
     resave: false,
-    saveUninitialized: false,
+    saveUninitialized: true,
     name: config.session.key,
     secret: config.session.secret,
     cookie: 
@@ -39,10 +38,14 @@ app.use(session({
 app.use(flash());
 
 app.use(function(req, res, next){
-    console.log(req.flash('err').toString());
-    res.locals.err = req.flash('err').toString();
+        
+        res.locals.error = req.flash('error').toString();
+        console.log('locals error:' + res.locals.error);
     next();
 });
+
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: false }));
 
 app.get('/', function (req, res) {
     res.render('index');

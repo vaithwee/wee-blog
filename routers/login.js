@@ -24,7 +24,7 @@ router.post('/', function (req, res) {
         }
         else 
         {
-            delete instance.password;
+            delete instance._doc.password;
             req.session.user = instance;
             req.flash('succ', 'login succ');
             res.redirect('/');

@@ -45,17 +45,15 @@ app.use(function (req, res, next) {
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 
-app.get('/', function (req, res) {
-    // console.log(res.locals.user.username);
-    res.render('index');
-});
 
+var index = require('./routers/index');
 var category = require('./routers/category');
 var article = require('./routers/article');
 var regist = require('./routers/regist');
 var logout = require('./routers/logout');
 var login = require('./routers/login');
 
+app.use('/', index);
 app.use('/category', category);
 app.use('/article', article);
 app.use('/regist', regist);

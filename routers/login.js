@@ -2,12 +2,13 @@ var express = require('express');
 var router = express.Router();
 var user = require('../models/user');
 var sha1 = require('sha1');
+var check = require('../middlewares/check').checkNotLogin;
 
-router.get('/', function (req, res) {
+router.get('/', check, function (req, res) {
     res.render('login');
 });
 
-router.post('/', function (req, res) {
+router.post('/', check, function (req, res) {
     var username = req.body.username;
     var password = req.body.password;
     password = sha1(password);

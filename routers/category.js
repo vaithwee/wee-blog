@@ -1,12 +1,13 @@
 var express = require('express');
 var router = express.Router();
 var category = require('../models/category');
+var check = require('../middlewares/check').checkLogin;
 
-router.get('/', function (req, res) {
+router.get('/', check, function (req, res) {
     res.render('category');
 });
 
-router.post('/', function (req, res, next) {
+router.post('/', check, function (req, res, next) {
     var name = req.body.name;
     if (name.length > 0) {
 
@@ -16,8 +17,7 @@ router.post('/', function (req, res, next) {
                     res.send('succ');
                 });
             }
-            else
-            {
+            else {
                 req.flash('error', 'already exist category');
                 res.redirect('back');
             }

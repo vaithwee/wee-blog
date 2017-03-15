@@ -2,8 +2,10 @@
 
 {{#each list}}
 <div>
-    <p>{{title}}</p>
+   <a href="/article/{{_id}}"><p>{{title}}</p></a> 
     <p>{{content}}</p>
     <p>{{time}}</p>
+    <p>{{author.username}}</p>
+    <p>{{category.name}}</p>
 </div>
 {{/each}}

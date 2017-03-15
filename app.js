@@ -37,6 +37,8 @@ app.use(flash());
 
 app.use(function (req, res, next) {
     res.locals.error = req.flash('error').toString();
+    res.locals.succ = req.flash('succ').toString();
+    res.locals.user = req.session.user;
     next();
 });
 
@@ -44,13 +46,21 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 
 app.get('/', function (req, res) {
+    // console.log(res.locals.user.username);
     res.render('index');
 });
 
 var category = require('./routers/category');
 var article = require('./routers/article');
+var regist = require('./routers/regist');
+var logout = require('./routers/logout');
+var login = require('./routers/login');
+
 app.use('/category', category);
 app.use('/article', article);
+app.use('/regist', regist);
+app.use('/logout', logout);
+app.use('/login', login);
 
 const port = process.env.PORT || config.port;
 

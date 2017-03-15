@@ -6,6 +6,13 @@
           {{#if error}}
             <h3>{{error}}</h3>
         {{/if}}
+        {{#if succ}}
+            <h3>{{succ}}</h3>
+        {{/if}}
+
+        {{#if user}}
+            <h3>nickname{{user.username}}</h3>
+        {{/if}}
         {{{body}}}
 
       

@@ -4,12 +4,12 @@ var config = require('config-lite');
 var logger = require('morgan');
 var path = require('path');
 var hbs = require('hbs');
-var category = require('./routers/category');
 var bodyParser = require('body-parser');
 var mongoose = require('mongoose');
 var flash = require('connect-flash');
 var session = require('express-session');
 var mongo = require('connect-mongo')(session);
+
 
 mongoose.connect(config.mongo);
 
@@ -21,26 +21,22 @@ hbs.registerPartials(path.join(__dirname, 'views/partials'));
 
 app.use(express.static(path.join(__dirname, 'public')));
 
-
-
 app.use(session({
     resave: false,
     saveUninitialized: true,
     name: config.session.key,
     secret: config.session.secret,
-    cookie: 
+    cookie:
     {
         maxAge: config.session.maxAge
     },
-    store: new mongo({url: config.mongo})
+    store: new mongo({ url: config.mongo })
 }));
 
 app.use(flash());
 
-app.use(function(req, res, next){
-        
-        res.locals.error = req.flash('error').toString();
-        console.log('locals error:' + res.locals.error);
+app.use(function (req, res, next) {
+    res.locals.error = req.flash('error').toString();
     next();
 });
 
@@ -51,7 +47,10 @@ app.get('/', function (req, res) {
     res.render('index');
 });
 
+var category = require('./routers/category');
+var article = require('./routers/article');
 app.use('/category', category);
+app.use('/article', article);
 
 const port = process.env.PORT || config.port;
 

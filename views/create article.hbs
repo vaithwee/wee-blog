@@ -1,0 +1,11 @@
+<h1>create article</h1>
+<form action="/article/create" method="POST">
+<select name="category">
+{{#each category}}
+<option value ="{{_id}}">{{name}}</option>
+{{/each}}
+</select><br />
+<input type="text" name="title" /><br />
+<input type="content" name="content" /> <br />
+<button type="submit">sumbit</button>
+</form>

@@ -13,7 +13,7 @@ router.get('/', function (req, res) {
 router.get('/:id', function (req, res, next) {
     var id = req.params.id;
     category.findById(id).exec(function (err, cate) {
-        article.find({category: id}).populate('author').populate('category').exec(function (err, data) {
+        article.find({category: id}).populate('author').populate('category').sort('-time').exec(function (err, data) {
             if (err)
             {
                 next();

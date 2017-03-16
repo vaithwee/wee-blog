@@ -6,26 +6,29 @@ var article = require('../models/article');
 
 router.get('/', function (req, res) {
     category.find(function (err, data) {
-        res.render('category', {data: data});
+        res.render('category', {data: data, title:"Category", background: "/img/contact-bg.jpg"});
     });
 });
 
 router.get('/:id', function (req, res, next) {
     var id = req.params.id;
-    article.find({category: id}).populate('author').populate('category').exec(function (err, data) {
-        if (err)
-        {
-            next();
-        }
-        else
-        {
-            res.render('index', {list: data});
-        }
-    });
+    category.findById(id).exec(function (err, cate) {
+        article.find({category: id}).populate('author').populate('category').exec(function (err, data) {
+            if (err)
+            {
+                next();
+            }
+            else
+            {
+                res.render('category article list', {list: data, title:cate.name, background:"/img/about-bg.jpg"});
+            }
+        });
+    })
+
 });
 
 router.get('/create', check, function (req, res) {
-    res.render('create category');
+    res.render('create category', {title: "Create Category", background:"/img/about-bg.jpg"});
 });
 
 router.post('/create', check, function (req, res, next) {
@@ -34,8 +37,8 @@ router.post('/create', check, function (req, res, next) {
 
         category.findOne({ name: name }, function (err, cate) {
             if (cate == null) {
-                new category({ name: name }).save(function (err) {
-                    res.send('succ');
+                new category({ name: name }).save(function (err, saveInstance) {
+                    res.redirect('/category/' + saveInstance._id);
                 });
             }
             else {

@@ -7,7 +7,7 @@ var user = require('../models/user');
 
 router.get('/create', check, function (req, res) {
     category.find(function (err, categories) {
-        res.render('create article', { category: categories });
+        res.render('create article', { category: categories , title:'New Article', background:'/img/post-bg.jpg'});
     });
 
 });

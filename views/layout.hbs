@@ -1,24 +1,18 @@
+<!DOCTYPE html>
 <html>
-    <head></head>
-    <body>
-        {{> nav}}
-        
-          {{#if error}}
-            <h3>{{error}}</h3>
-        {{/if}}
-        {{#if succ}}
-            <h3>{{succ}}</h3>
-        {{/if}}
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1,user-scalable=no" >
+    <title>{{title}}</title>
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
 
-        {{#if user}}
-            <h3>nickname{{user.username}}</h3>
-        {{/if}}
-        {{{body}}}
+    <link href="/css/clean-blog.min.css" rel="stylesheet">
+    <script src="/js/jquery-3.1.1.js"></script>
+    <script src="/js/bootstrap.js"></script>
 
-        {{#if user}}
-        <a href="/article/{{user._id}}">我的文章</a>
-        {{/if}}
-
-      
-    </body>
+</head>
+<body>
+{{> nav}}
+{{{body}}}
+</body>
 </html>

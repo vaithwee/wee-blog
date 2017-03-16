@@ -1,4 +1,5 @@
 var mongoose = require('mongoose');
+var moment = require('moment');
 
 var articleSchema = mongoose.Schema({
     title: String,
@@ -8,6 +9,9 @@ var articleSchema = mongoose.Schema({
     author: {type: mongoose.Schema.Types.ObjectId, ref: 'user'}
 });
 
+articleSchema.methods.getDisplayTime = function () {
+    return moment(this.time).format('MMMM Do YYYY, h:mm a');
+};
 
 var article = mongoose.model("article", articleSchema);
 

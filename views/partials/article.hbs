@@ -3,10 +3,11 @@
         <h2 class="post-title">
            {{title}}
         </h2>
+        <a href="/category/{{category._id}}"><span class="label label-primary post-category">{{category.name}}</span></a>
         <h3 class="post-subtitle">
             {{content}}
         </h3>
     </a>
-    <p class="post-meta">Posted by <a href="#">{{author.username}}</a> {{time}}</p>
+    <p class="post-meta">Posted by <a href="article/{{author._id}}">{{author.username}}</a> on {{this.getDisplayTime}}</p>
 </div>
 <hr>

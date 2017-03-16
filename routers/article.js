@@ -38,7 +38,7 @@ router.post('/create', check, function (req, res) {
 
 
 router.get('/:id', function (req, res, next) {
-    article.findById(req.params.id, function (err, arti) {
+    article.findById(req.params.id).populate('author').populate('category').exec(function (err, arti) {
         if (err || arti == null) {
             next();
         }

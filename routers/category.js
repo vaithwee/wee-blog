@@ -2,12 +2,33 @@ var express = require('express');
 var router = express.Router();
 var category = require('../models/category');
 var check = require('../middlewares/check').checkLogin;
+var article = require('../models/article');
 
-router.get('/', check, function (req, res) {
-    res.render('category');
+router.get('/', function (req, res) {
+    category.find(function (err, data) {
+        res.render('category', {data: data});
+    });
 });
 
-router.post('/', check, function (req, res, next) {
+router.get('/:id', function (req, res, next) {
+    var id = req.params.id;
+    article.find({category: id}).populate('author').populate('category').exec(function (err, data) {
+        if (err)
+        {
+            next();
+        }
+        else
+        {
+            res.render('index', {list: data});
+        }
+    });
+});
+
+router.get('/create', check, function (req, res) {
+    res.render('create category');
+});
+
+router.post('/create', check, function (req, res, next) {
     var name = req.body.name;
     if (name.length > 0) {
 

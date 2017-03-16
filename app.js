@@ -60,8 +60,6 @@ app.use('/regist', regist);
 app.use('/logout', logout);
 app.use('/login', login);
 
-app.locals.title = "Hello, World--I'm Vaith";
-
 const port = process.env.PORT || config.port;
 
 app.listen(port, function (req, res) {

@@ -1,3 +1,22 @@
-{{title}}
-{{content}}
-{{time}}
+<header class="intro-header" style="background-image: url('/img/post-bg.jpg')">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="post-heading">
+                    <h1>{{title}}</h1>
+                    <h2 class="subheading">{{category.name}}</h2>
+                    <span class="meta">Posted by <a href="#">{{author.username}}</a> on {{time}}</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<article>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                {{content}}
+            </div>
+        </div>
+    </div>
+</article>

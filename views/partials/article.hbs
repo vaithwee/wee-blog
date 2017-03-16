@@ -1,10 +1,12 @@
-<div class="row">
-    <div class="col-xs-12">
-        <div style="vertical-align: middle">
-            <span class="h4">{{title}}</span>
-            <span class="label label-primary">{{category.name}}</span>
-        </div>
-
-        <p class="text-info">{{content}}</p>
-    </div>
+<div class="post-preview">
+    <a href="/article/{{_id}}">
+        <h2 class="post-title">
+           {{title}}
+        </h2>
+        <h3 class="post-subtitle">
+            {{content}}
+        </h3>
+    </a>
+    <p class="post-meta">Posted by <a href="#">{{author.username}}</a> {{time}}</p>
 </div>
+<hr>

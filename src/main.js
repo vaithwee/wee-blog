@@ -11,4 +11,4 @@ import 'element-ui/lib/theme-chalk/index.css'
 
 new Vue({
   render: h => h(App),
-}).$mount('#app')
+}).$mount('#app');

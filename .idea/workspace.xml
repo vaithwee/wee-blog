@@ -3,8 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="85e0ac44-8b1c-44a4-9b06-1b3804cf4751" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vscode/launch.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/HelloWorld.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -91,6 +92,7 @@
       <updated>1582556921951</updated>
       <workItem from="1582556923948" duration="6445000" />
       <workItem from="1582590215445" duration="6770000" />
+      <workItem from="1582680887457" duration="4438000" />
     </task>
     <servers />
   </component>
@@ -102,26 +104,26 @@
       <screen x="0" y="23" width="2560" height="1337" />
     </state>
     <state x="1384" y="353" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.2560.1337@0.23.2560.1337" timestamp="1582557429434" />
-    <state width="1878" height="243" key="GridCell.Tab.0.bottom" timestamp="1582623918027">
+    <state width="1878" height="277" key="GridCell.Tab.0.bottom" timestamp="1582681996451">
       <screen x="0" y="23" width="1920" height="973" />
     </state>
     <state width="1238" height="363" key="GridCell.Tab.0.bottom/0.23.2560.1337@0.23.2560.1337" timestamp="1582562481110" />
-    <state width="1878" height="243" key="GridCell.Tab.0.bottom/1920.23.1680.1027/0.23.1920.973@0.23.1920.973" timestamp="1582623918027" />
-    <state width="1878" height="243" key="GridCell.Tab.0.center" timestamp="1582623918025">
+    <state width="1878" height="277" key="GridCell.Tab.0.bottom/1920.23.1680.1027/0.23.1920.973@0.23.1920.973" timestamp="1582681996451" />
+    <state width="1878" height="277" key="GridCell.Tab.0.center" timestamp="1582681996450">
       <screen x="0" y="23" width="1920" height="973" />
     </state>
     <state width="1238" height="363" key="GridCell.Tab.0.center/0.23.2560.1337@0.23.2560.1337" timestamp="1582562481109" />
-    <state width="1878" height="243" key="GridCell.Tab.0.center/1920.23.1680.1027/0.23.1920.973@0.23.1920.973" timestamp="1582623918025" />
-    <state width="1878" height="243" key="GridCell.Tab.0.left" timestamp="1582623918024">
+    <state width="1878" height="277" key="GridCell.Tab.0.center/1920.23.1680.1027/0.23.1920.973@0.23.1920.973" timestamp="1582681996450" />
+    <state width="1878" height="277" key="GridCell.Tab.0.left" timestamp="1582681996449">
       <screen x="0" y="23" width="1920" height="973" />
     </state>
     <state width="1238" height="363" key="GridCell.Tab.0.left/0.23.2560.1337@0.23.2560.1337" timestamp="1582562481109" />
-    <state width="1878" height="243" key="GridCell.Tab.0.left/1920.23.1680.1027/0.23.1920.973@0.23.1920.973" timestamp="1582623918024" />
-    <state width="1878" height="243" key="GridCell.Tab.0.right" timestamp="1582623918026">
+    <state width="1878" height="277" key="GridCell.Tab.0.left/1920.23.1680.1027/0.23.1920.973@0.23.1920.973" timestamp="1582681996449" />
+    <state width="1878" height="277" key="GridCell.Tab.0.right" timestamp="1582681996450">
       <screen x="0" y="23" width="1920" height="973" />
     </state>
     <state width="1238" height="363" key="GridCell.Tab.0.right/0.23.2560.1337@0.23.2560.1337" timestamp="1582562481110" />
-    <state width="1878" height="243" key="GridCell.Tab.0.right/1920.23.1680.1027/0.23.1920.973@0.23.1920.973" timestamp="1582623918026" />
+    <state width="1878" height="277" key="GridCell.Tab.0.right/1920.23.1680.1027/0.23.1920.973@0.23.1920.973" timestamp="1582681996450" />
     <state x="2420" y="369" key="com.intellij.ide.util.TipDialog" timestamp="1582590215697">
       <screen x="1920" y="23" width="1680" height="1027" />
     </state>

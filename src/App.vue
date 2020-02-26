@@ -1,6 +1,10 @@
 <template>
   <div id="app">
-    <el-image src="http://demo.cssmoban.com/cssthemes6/quar_11_stisla/img/hero.jpeg" class="backgroundImage" fit="cover"></el-image>
+    <el-image
+            src="http://demo.cssmoban.com/cssthemes6/quar_11_stisla/img/hero.jpeg"
+            class="backgroundImage"
+            fit="cover">
+    </el-image>
     <el-container id="content">
       <el-header height="87px" class="nav">
         <div class="nav-bg"></div>
@@ -15,6 +19,7 @@
                 <li class="nav-menu-item">Home</li>
                 <li class="nav-menu-item">Blog</li>
                 <li class="nav-menu-item">Project</li>
+
 
               </ul>
             </el-col>
@@ -326,21 +331,43 @@ export default {
     font-weight: bold;
     line-height: 87px;
     font-size: 14px;
-    padding: 0 20px;
     letter-spacing: 1px;
     list-style: none;
     position: fixed;
     right: 0;
 
 }
-  .nav-menu-item:after {
-    content: ' ';
-    bottom: -10px;
-    position: absolute;
-    left: 50%;
-    height: 2px;
-    color: white;
+
+  .nav-menu-link {
+
   }
+
+  .nav-menu-item:after {
+    content: ' hello ';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    height: 2px;
+    width: 100px;
+    background-color: #fff;
+    transition: all .5s;
+    -webkit-transition: all .5s;
+    -o-transition: all .5s;
+    /*-ms-transition: all .5s;*/
+  }
+
+.nav-menu-item.nav-menu-link:hover {
+  color: #fff;
+}
+
+.nav-menu-item.nav-menu-link:hover:after {
+  width: 20px;
+}
 
 .nav-menu-item {
   padding: 0 20px;

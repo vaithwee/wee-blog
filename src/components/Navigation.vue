@@ -1,6 +1,5 @@
 <template>
-    <div class="nav" height="87px">
-        <div class="nav-bg" :style="{'background-color':backgroundColor}"></div>
+    <div class="nav" :style="{'background-color':backgroundColor}">
         <div class="nav-content">
             <el-row :gutter="20">
                 <el-col :span="6">
@@ -40,24 +39,21 @@
         width: 100%;
         height: 87px;
         text-align: left;
-        padding: 0 20px;
         z-index: 1;
     }
 
-    .nav-bg {
-        text-align: left;
-        position: fixed;
+
+
+    .nav-content {
+        position: absolute;
         top: 0;
         left: 0;
         width: 100%;
         height: 87px;
-        z-index: 0;
-    }
-
-    .nav-content {
+        margin: 0;
         text-align: left;
         z-index: 1;
-        width: 100%;
+        padding: 0 20px;
     }
 
     .nav-title {

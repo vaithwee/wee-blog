@@ -22,11 +22,21 @@
             NavMenu
         },
         props: {
-            backgroundColor: {
+            bgColor: {
                 type: String,
                 default() {
                     return 'rgba(0,0,0,0.85)';
                 }
+            }
+        },
+        data() {
+            return {
+                backgroundColor: this.bgColor
+            }
+        },
+        methods: {
+            changeBgColor(value) {
+                this.backgroundColor = value;
             }
         }
     }
@@ -39,6 +49,7 @@
         width: 100%;
         height: 87px;
         text-align: left;
+        top: 0;
         z-index: 1;
     }
 

@@ -1,9 +1,10 @@
 <template>
   <div id="app">
-    <navigation background-color="rgba(0,0,0,0.85)" ref="nav"/>
-    <router-view>
-    </router-view>
+    <navigation ref="nav" />
+    <router-view></router-view>
+
   </div>
+
 </template>
 
 <script>
@@ -32,7 +33,10 @@
   }
 
   #app {
-    display: flex;
+    /*display: flex;*/
+    background-color: red;
+    /*width: 100%;*/
+    /*height: 100%;*/
   }
 
 

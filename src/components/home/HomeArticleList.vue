@@ -7,8 +7,7 @@
         <p class="section-lead text-muted">We wrote some articles about whatever was on our heads and most people liked it.</p>
         <el-col :xs="{span:22,offset:1}" :sm="{span:22, offset:1}" :md="{span:18, offset:3}">
           <el-row :gutter="30">
-            <el-col :xs="{span:24}" :sm="{span:12}" :md="{span:8}" v-for="(item, index) in list"
-            >
+            <el-col :xs="{span:24}" :sm="{span:12}" :md="{span:8}" v-for="(item, index) in list" :key="index">
               <home-article-list-item>
 
               </home-article-list-item>

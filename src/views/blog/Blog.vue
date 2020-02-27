@@ -2,7 +2,7 @@
   <scroll class="content">
     <div>
       <el-row>
-        <el-col :xs="{span:22, offset:1}" :sm="{span:18, offset:3}" :md="{span:16, offset:4}" :lg="{span:10, offset:6}">
+        <el-col :xs="{span:22, offset:1}" :sm="{span:18, offset:3}" :md="{span:16, offset:4}" :lg="{span:12, offset:6}">
           <home-article-list-item></home-article-list-item>
           <home-article-list-item></home-article-list-item>
           <home-article-list-item></home-article-list-item>

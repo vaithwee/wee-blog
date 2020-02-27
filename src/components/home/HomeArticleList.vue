@@ -1,6 +1,6 @@
 <template>
   <section>
-    <div>
+    <div class="content">
 
       <el-row>
         <h2>Wee Blog</h2>
@@ -54,5 +54,7 @@
 </script>
 
 <style scoped>
-
+.content {
+  background-color: #f9f9f9;
+}
 </style>

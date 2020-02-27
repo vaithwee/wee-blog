@@ -1,8 +1,8 @@
 <template>
     <div>
         <ul class="nav-menu-main">
-            <li class="nav-menu-item"><span class="nav-menu-item-title active">Home</span></li>
-            <li class="nav-menu-item"><span class="nav-menu-item-title">Blog</span></li>
+          <li class="nav-menu-item"><span class="nav-menu-item-title active"><router-link to="/" class="nav-link" >Home</router-link></span></li>
+            <li class="nav-menu-item"><span class="nav-menu-item-title"><router-link to="/blog"  class="nav-link" >Blog</router-link></span></li>
             <li class="nav-menu-item"><span class="nav-menu-item-title">Project</span></li>
         </ul>
     </div>
@@ -74,4 +74,9 @@
     .nav-menu-item-title.active:after {
         width: 20px;
     }
+
+  .nav-link {
+    color: white;
+    text-decoration: none;
+  }
 </style>

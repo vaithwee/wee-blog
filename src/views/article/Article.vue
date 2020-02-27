@@ -15,79 +15,7 @@
                         </el-image>
                     </div>
                     <div class="article-content">
-                        现在很流行一句话：娶妻不娶扶弟魔，充分表明了大家对分不清生活中主次的女人有多不待见——不仅男的不希望遇到个这样的妻子，很多女性也不喜欢这样的女同胞。
-
-                        这是一个扶弟魔遇上暴躁男的经历。
-
-                        1
-
-                        小磊是个电工，今年26岁，和妻子小红是在网上认识的。当时，他们两人聊了一个多星期，小磊觉得这女孩不错，又在同一个城市，抱着结婚的目的，约小红出来见面。
-
-                        小红倒是答应了，但她是第一次和网友见面，特意带上了她父亲。小磊倒也没觉得意外，相反还认为这是未来的老丈人，早晚都得见。
-
-                        奔现之后，两人继续交往。几个月后，小红怀上了孩子，他们就把结婚提上了日程。他们当地结婚的彩礼一般都要10多万，小红父亲提出了15万的要求。
-
-                        但是，小磊家并不富裕，根本拿不出这笔彩礼钱。而且，由于他要结婚，家里还借了10多万翻盖房子，更是一穷二白。不过，小红抗住父亲的压力，坚持嫁给了小磊。
-
-                        2
-
-                        但是，婚后的日子并不像两人想象的那么美好。小磊认为，小红既然嫁过来了，就该尽力做好一个妻子的本份：洗衣做饭带孩子，有能力挣钱的话，挣到的钱也该花在这个家里，毕竟要还10多万的外债呢。
-
-                        可是，小红也有自己的心思。她觉得，从小母亲就跟人跑了，全靠父亲把自己和弟弟养大。现在父亲上了年纪，自己又违背他的意愿没收彩礼就嫁给小磊，肯定得想法弥补。所以，她在生下孩子三个月后，就把孩子交给公婆带，自己找了一份收银员的工作，挣到的钱全部交给父亲，供弟弟上学。
-
-                        对小红的做法，小磊十分不满。他说了几次，可小红根本不听他的，仍旧把工资全部拿给父亲。加上小红有几次做事不周到，更是引得丈夫大发雷霆。
-
-                        3
-
-                        一次，孩子夜里发高烧，小红不知所措，急忙打小磊的电话。小磊正在市里忙着，接到电话后急忙往回赶。没想到他敲门好半天，连邻居都被吵醒了，小红都没有来开门。后来，门开了，小磊一问，小红说是她太累，睡着了！
-
-                        此时，小磊已经在拼命压着火，让小红一起快点带孩子上医院，可小红还在磨时间，他忍不住推了她一把，小红就倒在地上大哭起来。
-
-                        又一次，小磊工作完回到家，发现厨房在冒烟，进去一看，水被烧干了，而且水壸都快烧化了，小红却在屋里打电话。他一怒之下，冲进房间把她拽到厨房，发着火把锅碗瓢盆全都摔到了地上。
-
-                        面对这么一个不把心思花在家里的妻子，小磊开始在网上寻找可以倾诉的对象。
-
-                        4
-
-                        他又认识了一个女网友。但没多久，就被小红发现了。
-
-                        小红说，她平时爱在QQ发一些说说，一次，有个陌生网友为她的说说点了赞。她有点奇怪，就进了这个网友的空间。谁知道，这个网友有一条日志写着：这是我爱的人；下面竟然是小磊的照片！
-
-                        联想到自己和丈夫相识的经历，小磊这是又开始搞网恋了？
-
-                        面对小红的质问，小磊说，不过是和个网友聊聊天，没有什么。让小红不要疑神疑鬼。只要小红尽力做好一个妻子的本份，他不会做对不起家庭和妻子的事，更何况，他们还有了孩子。
-
-                        小红觉得小磊的说法很可笑：人家都说爱他了，居然还没什么？！
-
-                        小磊说：“是她说爱我，我又没说爱她！我也告诉过她我有家庭有孩子，你别无理取闹好不好？”面对这个一点也不温柔不爱自己的妻子，小磊觉得耐心已经到了尽头。
-
-                        5
-
-                        其实，小磊真和那个女网友没什么吗？实情是小磊觉得小红根本不爱自己，心里不痛快，把对妻子的不满对着女网友倾诉，两人还一起约着看过电影。
-
-                        小红连彩礼都没要就嫁了过来，小磊为什么还会认为小红不爱他呢？
-
-                        除了小红把工资全交给父亲以外，还有一件事让小磊觉得寒心。
-
-                        小磊是做电工的，经常接来自不同地方的活，还需要带各种工具，所以，如果有一辆面包车，效率可以提高很多。为此，他到处筹钱想买车，最后还差6000元，他问小红有没有这笔钱。
-
-                        小红毫不犹豫，直接说没有。但后来，小磊发现，小磊微信钱包里有3000元。被欺骗的感觉让小磊暴怒了，他摔了小红的手机。
-
-                        小红解释说，小磊要的是6000元，自己只有3000元，拿出来也还是不够。而且，这笔钱是打算留着给父亲备用的，万一有个什么事情，也不至于一分钱都拿不出来。
-
-                        6
-
-                        如今，小磊和小红关系冷到了冰点，两人互相都不满意。不过，小红说，自己是单亲家庭，从小过得很苦很累，不想自己的孩子也是单亲家庭。
-
-                        小磊也说，自己是个男人，为了家为了孩子，没有想过离婚。
-
-                        两人都不想离婚。但是，如果他们双方不做出改变，这样下去就算不离婚，在一起还有什么意思呢？
-
-                        其实，夫妻之间还是要互相尊重，小磊应该把心收回来，和女网友彻底了断；小红也不能把工资全部交给父亲，两人应该对家庭开支做出一个计划，在把家里的开支留出来以后，有富余的再资助小红家里。弟弟也不小了，可以自己打工挣生活费，不能全部靠姐姐，从而影响到小红自己的家庭。
-
-                        另外，夫妻间有什么不满，最好是能直接和对方说，别动不动就找外人倾诉。
-
-                        不知大家对此有什么看法？
+                        <markdown-preview :initialValue="htmlContent" theme="dark"></markdown-preview>
                     </div>
                 </el-col>
             </el-row>
@@ -97,10 +25,218 @@
 
 <script>
     import Scroll from "@/components/Scroll";
+    import {MarkdownPreview} from 'vue-meditor';
     export default {
         name: "BlogArticle",
         components: {
-            Scroll
+            Scroll,
+            MarkdownPreview,
+        },
+        computed: {
+            htmlContent() {
+                return "# Mac OS 新系统安装指南\n" +
+                    "\n" +
+                    "#### 系统环境设置\n" +
+                    "- 系统偏好设置-通用-外观-石墨色，勾选 使用暗色菜单和程序坞\n" +
+                    "- 系统偏好设置-鼠标-反选 滚动方向：自然\n" +
+                    "- 系统偏好设置-键盘-修饰键-外接键盘 Option<=>Command\n" +
+                    "- 系统偏好设置-Siri-反选 启动“询问Siri”/在菜单栏中显示Siri\n" +
+                    "- Dock条去除无用程序\n" +
+                    "- 系统偏好设置-程序坞-调整大小，勾选：放大，最小化时使用：缩放效果\n" +
+                    "\n" +
+                    "\n" +
+                    "#### 软件安装\n" +
+                    "- **搜狗输入法** ：[官网](https://pinyin.sogou.com/mac/)\n" +
+                    "\n" +
+                    "```bash\n" +
+                    "    - 状态栏显示斗图图标-关闭\n" +
+                    "    - 状态栏显示语音图标-关闭\n" +
+                    "    - 中文下使用英文标点-开启\n" +
+                    "    - 外观-简约黑\n" +
+                    "    - 按键-当前输入状态提示-跟随式\n" +
+                    "```\n" +
+                    "\n" +
+                    "- **迅雷** : [官网](https://www.xunlei.com/)\n" +
+                    "\n" +
+                    "- **Xcode** ：[AppStore](https://itunes.apple.com/cn/app/xcode/id497799835?mt=12)\n" +
+                    "- **Shadowsocks-NG-R8** : [GitHub](https://github.com/VeniZ/ShadowsocksX-NG-R8-Bakup)\n" +
+                    "- **微信** : [官网](https://weixin.qq.com/)\n" +
+                    "- **Chrome** : [官网](https://www.google.com/chrome/)\n" +
+                    "- **Source Tree**: [官网](https://www.sourcetreeapp.com/)\n" +
+                    "\n" +
+                    "```\n" +
+                    "    - 主题-暗色\n" +
+                    "```\n" +
+                    "- **iTerm2** :\n" +
+                    " [官网](https://www.iterm2.com/)\n" +
+                    "\n" +
+                    "```java\n" +
+                    "    #install\n" +
+                    "    sh -c \"$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)\"\n" +
+                    "\n" +
+                    "    #自定义命令\n" +
+                    "    sudo code ~/.zshrc\n" +
+                    "```\n" +
+                    "\n" +
+                    "- **Visual Studio Code** [官网](https://code.visualstudio.com/)\n" +
+                    "\n" +
+                    "```bash\n" +
+                    "    - Install `code` commond in PATH\n" +
+                    "    - Set `editor.fontSize` to 16\n" +
+                    "\n" +
+                    "    - Markdown Preview Enhanced\n" +
+                    "    --\"markdown-preview-enhanced.previewTheme\": \"monokai.css\"，\n" +
+                    "    --\"markdown-preview-enhanced.mermaidTheme\": \"dark\"\n" +
+                    "    - Chinese (Simplified) Language Pack for Visual Studio Code -\n" +
+                    "    - Bracket Pair Colorizer\n" +
+                    "```\n" +
+                    "\n" +
+                    "\n" +
+                    "\n" +
+                    "- **Java** : [官网](http://www.oracle.com/technetwork/java/javase/downloads/index.html)\n" +
+                    "\n" +
+                    "```bash\n" +
+                    "    #install  一般选择Java8\n" +
+                    "    http://www.oracle.com/technetwork/java/javase/downloads/index.html\n" +
+                    "```\n" +
+                    "\n" +
+                    "- **Maven** : [官网](http://maven.apache.org/download.cgi)\n" +
+                    "选择`Link`下的`Binary tar.gz archive`\n" +
+                    "\n" +
+                    "```bash\n" +
+                    "    #move to usr local\n" +
+                    "    #remove apache-maven version to update\n" +
+                    "    sudo mv -f apache-maven /usr/local/\n" +
+                    "    #add path \n" +
+                    "    export MAVEN_HOME=\"/Applications/maven/bin\"\n" +
+                    "    PATH=$PATH:${MAVEN_HOME}\n" +
+                    "    #package\n" +
+                    "    mvn clean package -Dmaven.test.skip\n" +
+                    "    java -jar spring-boot-hello-world-0.0.1-SNAPSHOT.jar\n" +
+                    "```\n" +
+                    "Config\n" +
+                    "```xml\n" +
+                    "    <!-- apache-maven/conf/settings.xml -->\n" +
+                    "    <localRepository>/Users/vaith/Documents/maven-local-repository</localRepository>\n" +
+                    "    <mirror>\n" +
+                    "        <id>nexus-aliyun</id>\n" +
+                    "        <mirrorOf>*</mirrorOf>\n" +
+                    "        <name>Nexus aliyun</name>\n" +
+                    "        <url>http://maven.aliyun.com/nexus/content/groups/public</url>\n" +
+                    "    </mirror>\n" +
+                    "\n" +
+                    "    <!-- change sdk version to java 8 -->\n" +
+                    "    <profile>\n" +
+                    "      <id>jdk-1.8</id>\n" +
+                    "      <activation>\n" +
+                    "        <activeByDefault>true</activeByDefault>\n" +
+                    "        <jdk>1.8</jdk>\n" +
+                    "      </activation>\n" +
+                    "      <properties>\n" +
+                    "        <maven.compiler.source>1.8</maven.compiler.source>\n" +
+                    "        <maven.compiler.target>1.8</maven.compiler.target>\n" +
+                    "        <maven.compiler.compilerVersion>1.8</maven.compiler.compilerVersion>\n" +
+                    "      </properties>\n" +
+                    "    </profile>\n" +
+                    "```\n" +
+                    "\n" +
+                    "- **Tomcat** : [官网](https://tomcat.apache.org/download-80.cgi)\n" +
+                    "\n" +
+                    "```bash\n" +
+                    "    cd /Applications/apache-tomcat-8.5.39/bin\n" +
+                    "    chmod 777 *.sh\n" +
+                    "```\n" +
+                    "\n" +
+                    "- **IntelliJ IDEA** : [官网](https://www.jetbrains.com/idea/)\n" +
+                    "\n" +
+                    "```\n" +
+                    "    #Plugins\n" +
+                    "    - material-theme-ui : https://plugins.jetbrains.com/plugin/8006-material-theme-ui\n" +
+                    "    - GsonFormat\n" +
+                    "\n" +
+                    "    #Setting\n" +
+                    "    Preferences - Build, Execution, Deployment - Build Tools - Maven - Maven home directory\n" +
+                    "    Preferences - Build, Execution, Deployment - Build Tools - Maven - Runner - JRE\n" +
+                    "\n" +
+                    "    #Theme\n" +
+                    "    Preferences - Appearance & Behavior - Material Custom Theme - Material Darker\n" +
+                    "    Preferences - Appearance & Behavior - Material Custom Theme - Separators Color - #ffffff\n" +
+                    "\n" +
+                    "\n" +
+                    "```\n" +
+                    "- **有道云词典** : [官网](http://cidian.youdao.com/index-mac.html)\n" +
+                    "- **网易云音乐** : [AppStore](https://itunes.apple.com/cn/app/%E7%BD%91%E6%98%93%E4%BA%91%E9%9F%B3%E4%B9%90/id944848654?mt=12)\n" +
+                    "\n" +
+                    "\n" +
+                    "\n" +
+                    "- **SSH**\n" +
+                    "\n" +
+                    "\n" +
+                    "```bash\n" +
+                    "#check exist ssh\n" +
+                    "ls -al ~/.ssh\n" +
+                    "cd ~/.ssh\n" +
+                    "open ./\n" +
+                    "\n" +
+                    "#create SSH key\n" +
+                    "ssh-keygen -t rsa -C \"vaithwee@yeah.net\"\n" +
+                    "\n" +
+                    "#open id_rsa.pub\n" +
+                    "```\n" +
+                    "\n" +
+                    "\n" +
+                    "\n" +
+                    "- **IntelliJ IDEA**\n" +
+                    "\n" +
+                    "```\n" +
+                    "-- Material Theme UI --\n" +
+                    "-- GsonFormat --\n" +
+                    "-- Rainbow Brackets --\n" +
+                    "```\n" +
+                    "\n" +
+                    "- **MySql**\n" +
+                    "\n" +
+                    "```bash\n" +
+                    "#install https://dev.mysql.com/downloads/\n" +
+                    "MySQL Community Server 8.0.13\n" +
+                    "user: root\n" +
+                    "password: abcd1234\n" +
+                    "\n" +
+                    "# .zshrc 添加路径\n" +
+                    "PATH=$PATH:/usr/local/mysql/bin\n" +
+                    "\n" +
+                    "#jdbc \n" +
+                    "https://mvnrepository.com/artifact/mysql/mysql-connector-java\n" +
+                    "```\n" +
+                    "\n" +
+                    "\n" +
+                    "\n" +
+                    "- **CocoaPods**\n" +
+                    "\n" +
+                    "```bash\n" +
+                    " gem sources --add https://gems.ruby-china.com/ --remove https://rubygems.org/\n" +
+                    " gem sources -l\n" +
+                    " sudo gem install -n /usr/local/bin cocoapods\n" +
+                    " pod setup\n" +
+                    "```\n" +
+                    "\n" +
+                    "- **Sketch**\n" +
+                    "\n" +
+                    "```bash\n" +
+                    "sudo codesign -f -s - /Applications/Sketch.app/Contents/MacOS/Sketch\n" +
+                    "```\n" +
+                    "\n" +
+                    "- **Android Studio** [Website](https://developer.android.com/studio)\n" +
+                    "\n" +
+                    "```bash\n" +
+                    "sdk 安卓需要通过代理\n" +
+                    "gradle.properties 有个全局配置, 记得注释掉代理\n" +
+                    "#systemProp.https.proxyPort=1087\n" +
+                    "#systemProp.http.proxyHost=127.0.0.1\n" +
+                    "#systemProp.https.proxyHost=127.0.0.1\n" +
+                    "#systemProp.http.proxyPort=8001\n" +
+                    "```\n";
+            }
         }
     }
 </script>

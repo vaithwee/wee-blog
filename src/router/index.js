@@ -8,8 +8,12 @@ const Blog = () => import("@/views/blog/Blog");
 
 let routes = [
     {
+      path: '/',
+      redirect: '/home'
+    },
+    {
         name: 'home',
-        path: '/',
+        path: '/home',
         component: Home
     },
     {

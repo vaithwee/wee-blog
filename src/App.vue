@@ -9,7 +9,7 @@
 
 <script>
 
-    import Navigation from "./components/Navigation";
+    import Navigation from "./components/nav/Navigation";
 
     export default {
         name: 'App',

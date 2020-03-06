@@ -9,26 +9,26 @@
 </template>
 
 <script>
-    export default {
-        name: "NavMenuItem",
-        props: {
-            to: {
-                type: String,
-            },
-            title: {
-                type: String,
-            }
-        },
-        computed: {
-            isActive() {
-                // console.log(this.$router.path);
-                if (this.$router.path !== null) {
-                    return this.$route.path.indexOf(this.to) !== -1;
-                }
-                return  false;
-            }
+  export default {
+    name: "NavMenuItem",
+    props: {
+      to: {
+        type: String,
+      },
+      title: {
+        type: String,
+      }
+    },
+    computed: {
+      isActive() {
+        // console.log(this.$router.path);
+        if (this.$router.path !== null) {
+          return this.$route.path.indexOf(this.to) !== -1;
         }
+        return false;
+      }
     }
+  }
 </script>
 
 <style scoped>

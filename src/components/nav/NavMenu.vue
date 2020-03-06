@@ -4,27 +4,28 @@
       <nav-menu-item to="/home">Home</nav-menu-item>
       <nav-menu-item to="/blog">Blog</nav-menu-item>
       <nav-menu-item to="/project">Project</nav-menu-item>
-<!--      <li class="nav-menu-item">-->
-<!--        <span class="nav-menu-item-title">-->
-<!--          <router-link to="/" class="nav-link">Home</router-link>-->
-<!--        </span>-->
-<!--      </li>-->
-<!--      <li class="nav-menu-item"><span class="nav-menu-item-title"><router-link to="/blog"-->
-<!--                                                                               class="nav-link">Blog</router-link></span>-->
-<!--      </li>-->
-<!--      <li class="nav-menu-item"><span class="nav-menu-item-title">Project</span></li>-->
+      <!--      <li class="nav-menu-item">-->
+      <!--        <span class="nav-menu-item-title">-->
+      <!--          <router-link to="/" class="nav-link">Home</router-link>-->
+      <!--        </span>-->
+      <!--      </li>-->
+      <!--      <li class="nav-menu-item"><span class="nav-menu-item-title"><router-link to="/blog"-->
+      <!--                                                                               class="nav-link">Blog</router-link></span>-->
+      <!--      </li>-->
+      <!--      <li class="nav-menu-item"><span class="nav-menu-item-title">Project</span></li>-->
     </ul>
   </div>
 </template>
 
 <script>
   import NavMenuItem from "./NavMenuItem";
-    export default {
-        name: "NavMenu",
-        components: {
-            NavMenuItem,
-        }
+
+  export default {
+    name: "NavMenu",
+    components: {
+      NavMenuItem,
     }
+  }
 </script>
 
 <style scoped>

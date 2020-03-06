@@ -18,18 +18,19 @@
 </template>
 
 <script>
-    import Scroll from "../../components/Scroll";
-    import HomeArticleListItem from "../../components/home/HomeArticleListItem";
-    export default {
-        name: "Blog",
-        components: {
-            Scroll,
-            HomeArticleListItem,
-        },
-        mounted() {
-            this.$parent.$refs.nav.changeBgColor("rgba(0,0,0,1)");
-        },
-    }
+  import Scroll from "../../components/Scroll";
+  import HomeArticleListItem from "../../components/home/HomeArticleListItem";
+
+  export default {
+    name: "Blog",
+    components: {
+      Scroll,
+      HomeArticleListItem,
+    },
+    mounted() {
+      this.$parent.$refs.nav.changeBgColor("rgba(0,0,0,1)");
+    },
+  }
 </script>
 
 <style scoped>

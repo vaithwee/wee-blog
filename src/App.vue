@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <navigation ref="nav" />
+    <navigation ref="nav"/>
     <router-view></router-view>
 
   </div>
@@ -9,14 +9,14 @@
 
 <script>
 
-    import Navigation from "./components/nav/Navigation";
+  import Navigation from "./components/nav/Navigation";
 
-    export default {
-        name: 'App',
-        components: {
-            Navigation
-        }
+  export default {
+    name: 'App',
+    components: {
+      Navigation
     }
+  }
 </script>
 
 <style>

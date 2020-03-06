@@ -1,21 +1,36 @@
 <template>
   <div class="card">
-    <el-image class="card-img-top" fit="cover" src="http://t8.baidu.com/it/u=2247852322,986532796&fm=79&app=86&f=JPEG?w=1280&h=853" alt="Article Image" />
+    <el-image class="card-img-top" fit="cover"
+              :src="article.cover.originalURL" alt="Article Image" style="max-height: 300px"/>
     <div class="card-body">
-      <div class="article-subtitle">by <a href="#">John Doe</a> on August 10, 2017</div>
-      <h4 class="card-title"><a href="#" data-toggle="read" data-id="1">Duis aute irure dolor in reprehenderit in voluptate</a></h4>
-      <p class="card-text">Mauris eu eros in metus elementum porta eget sed ligula. Praesent consequat, ipsum molestie pellentesque venenatis.</p>
+      <div class="article-subtitle">by <a href="#">Wee</a> on {{createDateString}}</div>
+      <h4 class="card-title"><a href="#" data-toggle="read" data-id="1">{{article.title}}</a></h4>
+      <p class="card-text">Mauris eu eros in metus elementum porta eget sed ligula. Praesent consequat, ipsum molestie
+        pellentesque venenatis.</p>
       <div class="text-right">
-        <router-link to="/article/123" class="card-more" data-toggle="read" data-id="1">Read More <i class="ion-ios-arrow-right"></i></router-link>
+        <router-link :to="'/article/' + article.id" class="card-more" data-toggle="read" data-id="1">Read More <i
+                class="ion-ios-arrow-right"></i></router-link>
       </div>
     </div>
   </div>
 </template>
 
 <script>
-    export default {
-        name: "HomeArticleListItem"
+  export default {
+    name: "HomeArticleListItem",
+    props: {
+      article: null,
+    },
+    computed: {
+      createDateString() {
+        let date = new Date(this.article.createDate);
+        let year = date.getFullYear();
+        let month = date.getMonth();
+        let day = date.getDay();
+        return month + "月 " + day + "日, " + year;
+      }
     }
+  }
 </script>
 
 <style scoped>

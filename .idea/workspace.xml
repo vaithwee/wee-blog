@@ -2,28 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="85e0ac44-8b1c-44a4-9b06-1b3804cf4751" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/config/security_config.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/config/security_util.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/network/article_api.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/network/home_api.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/network/request.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/util/json_util.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Scroll.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Scroll.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/home/HomeArticleList.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/home/HomeArticleList.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/home/HomeArticleListItem.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/home/HomeArticleListItem.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/home/HomeFooter.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/home/HomeFooter.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/home/HomeProject.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/home/HomeProject.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/nav/NavMenu.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/nav/NavMenu.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/nav/NavMenuItem.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/nav/NavMenuItem.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/nav/Navigation.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/nav/Navigation.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/router/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/router/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/article/Article.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/article/Article.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/network/article_api.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/network/article_api.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/views/blog/Blog.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/blog/Blog.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/home/Home.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/home/Home.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -173,6 +155,7 @@
       <workItem from="1583458572964" duration="2133000" />
       <workItem from="1583464729742" duration="1758000" />
       <workItem from="1583481181563" duration="6962000" />
+      <workItem from="1583653282928" duration="2899000" />
     </task>
     <servers />
   </component>
@@ -188,25 +171,25 @@
       <screen x="0" y="23" width="2560" height="1337" />
     </state>
     <state x="1384" y="353" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.2560.1337@0.23.2560.1337" timestamp="1582557429434" />
-    <state width="1878" height="277" key="GridCell.Tab.0.bottom" timestamp="1583488647428">
-      <screen x="0" y="23" width="1920" height="973" />
+    <state width="619" height="363" key="GridCell.Tab.0.bottom" timestamp="1583659331309">
+      <screen x="0" y="23" width="2560" height="1337" />
     </state>
-    <state width="1238" height="363" key="GridCell.Tab.0.bottom/0.23.2560.1337@0.23.2560.1337" timestamp="1582814493494" />
+    <state width="619" height="363" key="GridCell.Tab.0.bottom/0.23.2560.1337@0.23.2560.1337" timestamp="1583659331309" />
     <state width="1878" height="277" key="GridCell.Tab.0.bottom/1920.23.1680.1027/0.23.1920.973@0.23.1920.973" timestamp="1583488647428" />
-    <state width="1878" height="277" key="GridCell.Tab.0.center" timestamp="1583488647427">
-      <screen x="0" y="23" width="1920" height="973" />
+    <state width="619" height="363" key="GridCell.Tab.0.center" timestamp="1583659331308">
+      <screen x="0" y="23" width="2560" height="1337" />
     </state>
-    <state width="1238" height="363" key="GridCell.Tab.0.center/0.23.2560.1337@0.23.2560.1337" timestamp="1582814493493" />
+    <state width="619" height="363" key="GridCell.Tab.0.center/0.23.2560.1337@0.23.2560.1337" timestamp="1583659331308" />
     <state width="1878" height="277" key="GridCell.Tab.0.center/1920.23.1680.1027/0.23.1920.973@0.23.1920.973" timestamp="1583488647427" />
-    <state width="1878" height="277" key="GridCell.Tab.0.left" timestamp="1583488647426">
-      <screen x="0" y="23" width="1920" height="973" />
+    <state width="619" height="363" key="GridCell.Tab.0.left" timestamp="1583659331308">
+      <screen x="0" y="23" width="2560" height="1337" />
     </state>
-    <state width="1238" height="363" key="GridCell.Tab.0.left/0.23.2560.1337@0.23.2560.1337" timestamp="1582814493493" />
+    <state width="619" height="363" key="GridCell.Tab.0.left/0.23.2560.1337@0.23.2560.1337" timestamp="1583659331308" />
     <state width="1878" height="277" key="GridCell.Tab.0.left/1920.23.1680.1027/0.23.1920.973@0.23.1920.973" timestamp="1583488647426" />
-    <state width="1878" height="277" key="GridCell.Tab.0.right" timestamp="1583488647428">
-      <screen x="0" y="23" width="1920" height="973" />
+    <state width="619" height="363" key="GridCell.Tab.0.right" timestamp="1583659331308">
+      <screen x="0" y="23" width="2560" height="1337" />
     </state>
-    <state width="1238" height="363" key="GridCell.Tab.0.right/0.23.2560.1337@0.23.2560.1337" timestamp="1582814493494" />
+    <state width="619" height="363" key="GridCell.Tab.0.right/0.23.2560.1337@0.23.2560.1337" timestamp="1583659331308" />
     <state width="1878" height="277" key="GridCell.Tab.0.right/1920.23.1680.1027/0.23.1920.973@0.23.1920.973" timestamp="1583488647428" />
     <state x="461" y="148" key="SettingsEditor" timestamp="1582704574568">
       <screen x="0" y="23" width="1920" height="973" />

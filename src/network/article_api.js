@@ -5,6 +5,15 @@ let ArticleAPI = {
     return request({
       url: "/article/detail/" + id,
     });
+  },
+  getArticleList(page, size) {
+    return request({
+      url: "/article/list",
+      params: {
+        page,
+        size
+      }
+    });
   }
 };
 

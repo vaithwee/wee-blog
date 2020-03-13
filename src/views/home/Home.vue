@@ -88,7 +88,7 @@
         console.log(res);
         this.greeting = res.data.info.greeting;
         this.backgroundImage = res.data.info.cover.originalURL;
-        this.articles = res.data.articles;
+        this.articles = res.data.blog;
       });
     },
     mounted() {

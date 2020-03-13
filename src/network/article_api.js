@@ -3,12 +3,12 @@ import {request} from "./request";
 let ArticleAPI = {
   getArticleDetail(id) {
     return request({
-      url: "/article/detail/" + id,
+      url: "/blog/article/" + id,
     });
   },
   getArticleList(page, size) {
     return request({
-      url: "/article/list",
+      url: "/blog/article",
       params: {
         page,
         size

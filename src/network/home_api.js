@@ -3,7 +3,7 @@ import {request} from "./request";
 let HomeAPI = {
   getHomeInfo: function () {
     return request({
-      url: "/home/info"
+      url: "/blog/info"
     });
   },
   

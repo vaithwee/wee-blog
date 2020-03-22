@@ -11,6 +11,7 @@
 
     <home-article-list :list="articles"/>
     <home-testimonial />
+    <home-footer />
   </scroll>
 </template>
 
@@ -18,11 +19,13 @@
   import Scroll from "@/components/Scroll";
   import HomeArticleList from "@/components/home/HomeArticleList";
   import HomeTestimonial from "@/components/home/HomeTestimonial";
-  import HomeAPI from "../../network/home_api";
+  import HomeAPI from "@/network/home_api";
+  import HomeFooter from "@/components/home/HomeFooter";
 
   export default {
     name: "Home",
     components: {
+      HomeFooter,
       HomeTestimonial,
       Scroll,
       HomeArticleList

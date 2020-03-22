@@ -1,11 +1,8 @@
 <template>
   <scroll class="content">
     <div>
-      <el-row>
-        <el-col :xs="{span:22, offset:1}" :sm="{span:18, offset:3}" :md="{span:16, offset:4}" :lg="{span:12, offset:6}">
-          <home-article-list-item v-for="(item, index) in list" :key="index" :article="item" />
-
-        </el-col>
+      <el-row style="margin: auto;max-width: 800px;padding-top: 30px">
+        <home-article-list-item v-for="(item, index) in list" :key="index" :article="item" :type="4" />
       </el-row>
     </div>
   </scroll>

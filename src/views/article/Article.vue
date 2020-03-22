@@ -1,24 +1,18 @@
 <template>
   <scroll class="content">
-    <div v-if="article">
-      <el-row>
-        <el-col :xs="{span:22, offset:1}" :sm="{span:18, offset:3}" :md="{span:16, offset:4}" :lg="{span:14, offset:5}"
-                class="article">
+    <div v-if="article" style="max-width: 1024px;min-height:100%;margin: auto;text-align: left">
+      <h2 class="article-title">{{article.title}}</h2>
 
-          <h2 class="article-title">{{article.title}}</h2>
+      <div class="article-subtitle mb-2 text-muted">by <a href="#">Wee</a> on {{createDateString}}</div>
 
-          <div class="article-subtitle mb-2 text-muted">by <a href="#">Wee</a> on {{createDateString}}</div>
+      <div class="article-cover">
+        <el-image :src="article.cover.originalURL" fit="cover">
 
-          <div class="article-cover">
-            <el-image :src="article.cover.originalURL" fit="cover">
-
-            </el-image>
-          </div>
-          <div class="article-content">
-            <markdown-preview :initialValue="article.content" theme="dark"/>
-          </div>
-        </el-col>
-      </el-row>
+        </el-image>
+      </div>
+      <div class="article-content">
+        <markdown-preview :initialValue="article.content" theme="dark"/>
+      </div>
     </div>
   </scroll>
 </template>
@@ -53,7 +47,10 @@
         let day = date.getDay();
         return month + "月 " + day + "日, " + year;
       }
-    }
+    },
+    mounted() {
+      this.$parent.$refs.nav.changeBgColor("rgba(0,0,0,1)");
+    },
   }
 </script>
 
@@ -78,6 +75,7 @@
   .article-title {
     color: #000;
     text-decoration: none;
+    padding-top: 30px;
   }
 
   .article-subtitle {
@@ -99,5 +97,6 @@
 
   .article-content {
     padding: 10px 10px;
+    text-align: left;
   }
 </style>

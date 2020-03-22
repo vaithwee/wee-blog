@@ -1,5 +1,5 @@
 <template>
-  <el-col :xs="{span: 24}" :sm="{span:(type===3||type===2)?12:24}" :md="{span:(type===3||type===2)?12:24}">
+  <el-col :xs="{span: 24}" :sm="{span:smspan}" :md="{span:smspan}">
     <div class="card" v-if="this.type === 0">
       <el-row :gutter="0">
         <el-col :xs="{span:24}" :sm="{span:12}" :md="{span:12}" >
@@ -45,8 +45,8 @@
       </div>
     </div>
 
-    <div class="card" v-if="(this.type===3 || this.type === 2)">
-      <div class="card-img" :style="{backgroundImage: 'url(\'' + article.cover.originalURL + '\')'}">
+    <div class="card" v-if="(this.type > 1)">
+      <div :class="{'card-img-hor':this.type===4,'card-img':type===2||type===3}" :style="{backgroundImage: 'url(\'' + article.cover.originalURL + '\')'}">
       </div>
       <div class="card-body">
         <h4 class="card-title"> <router-link :to="'/article/' + article.id" data-id="1" data-toggle="read" style="color: black">
@@ -88,6 +88,13 @@
         let day = date.getDay();
         return month + "月 " + day + "日, " + year;
       },
+      smspan() {
+        if (this.type === 1 || this.type ===0 || this.type === 4) {
+          return 24;
+        } else {
+          return 12;
+        }
+      }
     }
   }
 </script>
@@ -118,6 +125,8 @@
     -moz-background-size: cover;
   }
 
+
+
   .card-img-hor {
     width: 100%;
     height: 370px;
@@ -146,7 +155,7 @@
   .article-subtitle {
     font-size: 14px;
     color: #666;
-    margin-top: 10px;
+    margin-top: 16px;
   }
 
   .article-subtitle a {

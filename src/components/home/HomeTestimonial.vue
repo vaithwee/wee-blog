@@ -1,14 +1,10 @@
 <template>
   <div class="testimonial">
 <!--    <img style="width: 100%; height: 300px;" src="../../assets/test_bg.jpg"  alt=""/>-->
-    <el-row>
+
       <h2>Testimonial</h2>
-      <el-col
-          :xs="{span:22,offset:1}"
-          :sm="{span:22, offset:1}"
-          :md="{span:18, offset:3}"
-      >
-      <el-row>
+
+      <el-row style="max-width: 1024px;margin: auto">
         <el-col :md="6">
           <img class="test-img" src="../../assets/test-img.jpeg"  alt=""/>
         </el-col>
@@ -19,8 +15,6 @@
           <p>目前正在学习Unity游戏制作, 游戏天下第一!哈哈!</p>
         </el-col>
       </el-row>
-      </el-col>
-    </el-row>
   </div>
 </template>
 
@@ -33,6 +27,7 @@
 <style scoped>
 .testimonial {
   background-image: url('../../assets/test_bg.jpg');
+  padding: 30px;
 }
 .testimonial h2 {
   font-size: 40px;

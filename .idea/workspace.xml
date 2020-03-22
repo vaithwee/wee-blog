@@ -2,10 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="85e0ac44-8b1c-44a4-9b06-1b3804cf4751" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/assets/test-img.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/test_bg.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/home/HomeTestimonial.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/network/article_api.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/network/article_api.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/network/home_api.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/network/home_api.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/home/HomeArticleList.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/home/HomeArticleList.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/home/HomeArticleListItem.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/home/HomeArticleListItem.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/nav/Navigation.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/nav/Navigation.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/network/request.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/network/request.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/router/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/router/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/views/home/Home.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/home/Home.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vue.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/vue.config.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,8 +25,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Vue Single File Component" />
         <option value="JavaScript File" />
+        <option value="Vue Single File Component" />
       </list>
     </option>
   </component>
@@ -55,7 +65,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/network" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/assets" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -73,16 +83,17 @@
     <property name="settings.editor.selected.configurable" value="preferences.sourceCode" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/network" />
-      <recent name="$PROJECT_DIR$/src" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/assets" />
       <recent name="$PROJECT_DIR$/src" />
       <recent name="$PROJECT_DIR$/src/views/article" />
       <recent name="$PROJECT_DIR$/src/components/nav" />
       <recent name="$PROJECT_DIR$/src/components/home" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/assets" />
+      <recent name="$PROJECT_DIR$/src/network" />
+      <recent name="$PROJECT_DIR$/src" />
     </key>
   </component>
   <component name="RunManager" selected="npm.npm serve">
@@ -157,6 +168,13 @@
       <workItem from="1583481181563" duration="6962000" />
       <workItem from="1583653282928" duration="2899000" />
       <workItem from="1584078521195" duration="1902000" />
+      <workItem from="1584170054509" duration="1433000" />
+      <workItem from="1584183151591" duration="2508000" />
+      <workItem from="1584364907291" duration="629000" />
+      <workItem from="1584454081211" duration="616000" />
+      <workItem from="1584536174999" duration="2001000" />
+      <workItem from="1584784450529" duration="1090000" />
+      <workItem from="1584843528889" duration="14417000" />
     </task>
     <servers />
   </component>
@@ -172,40 +190,44 @@
       <screen x="0" y="23" width="2560" height="1337" />
     </state>
     <state x="1384" y="353" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.2560.1337@0.23.2560.1337" timestamp="1582557429434" />
-    <state width="619" height="363" key="GridCell.Tab.0.bottom" timestamp="1583659331309">
+    <state width="1238" height="363" key="GridCell.Tab.0.bottom" timestamp="1584867152563">
       <screen x="0" y="23" width="2560" height="1337" />
     </state>
-    <state width="619" height="363" key="GridCell.Tab.0.bottom/0.23.2560.1337@0.23.2560.1337" timestamp="1583659331309" />
+    <state width="1238" height="363" key="GridCell.Tab.0.bottom/0.23.2560.1337@0.23.2560.1337" timestamp="1584867152563" />
     <state width="1878" height="277" key="GridCell.Tab.0.bottom/1920.23.1680.1027/0.23.1920.973@0.23.1920.973" timestamp="1583488647428" />
-    <state width="619" height="363" key="GridCell.Tab.0.center" timestamp="1583659331308">
+    <state width="1238" height="363" key="GridCell.Tab.0.center" timestamp="1584867152562">
       <screen x="0" y="23" width="2560" height="1337" />
     </state>
-    <state width="619" height="363" key="GridCell.Tab.0.center/0.23.2560.1337@0.23.2560.1337" timestamp="1583659331308" />
+    <state width="1238" height="363" key="GridCell.Tab.0.center/0.23.2560.1337@0.23.2560.1337" timestamp="1584867152562" />
     <state width="1878" height="277" key="GridCell.Tab.0.center/1920.23.1680.1027/0.23.1920.973@0.23.1920.973" timestamp="1583488647427" />
-    <state width="619" height="363" key="GridCell.Tab.0.left" timestamp="1583659331308">
+    <state width="1238" height="363" key="GridCell.Tab.0.left" timestamp="1584867152561">
       <screen x="0" y="23" width="2560" height="1337" />
     </state>
-    <state width="619" height="363" key="GridCell.Tab.0.left/0.23.2560.1337@0.23.2560.1337" timestamp="1583659331308" />
+    <state width="1238" height="363" key="GridCell.Tab.0.left/0.23.2560.1337@0.23.2560.1337" timestamp="1584867152561" />
     <state width="1878" height="277" key="GridCell.Tab.0.left/1920.23.1680.1027/0.23.1920.973@0.23.1920.973" timestamp="1583488647426" />
-    <state width="619" height="363" key="GridCell.Tab.0.right" timestamp="1583659331308">
+    <state width="1238" height="363" key="GridCell.Tab.0.right" timestamp="1584867152562">
       <screen x="0" y="23" width="2560" height="1337" />
     </state>
-    <state width="619" height="363" key="GridCell.Tab.0.right/0.23.2560.1337@0.23.2560.1337" timestamp="1583659331308" />
+    <state width="1238" height="363" key="GridCell.Tab.0.right/0.23.2560.1337@0.23.2560.1337" timestamp="1584867152562" />
     <state width="1878" height="277" key="GridCell.Tab.0.right/1920.23.1680.1027/0.23.1920.973@0.23.1920.973" timestamp="1583488647428" />
     <state x="461" y="148" key="SettingsEditor" timestamp="1582704574568">
       <screen x="0" y="23" width="1920" height="973" />
     </state>
     <state x="461" y="148" key="SettingsEditor/1920.23.1680.1027/0.23.1920.973@0.23.1920.973" timestamp="1582704574568" />
-    <state x="571" y="351" key="com.intellij.ide.util.TipDialog" timestamp="1582848447486">
-      <screen x="0" y="23" width="1920" height="973" />
+    <state x="761" y="474" key="com.intellij.ide.util.TipDialog" timestamp="1584784451651">
+      <screen x="0" y="23" width="2560" height="1337" />
     </state>
-    <state x="761" y="474" key="com.intellij.ide.util.TipDialog/0.23.2560.1337@0.23.2560.1337" timestamp="1582806288288" />
+    <state x="761" y="474" key="com.intellij.ide.util.TipDialog/0.23.2560.1337@0.23.2560.1337" timestamp="1584784451651" />
     <state x="571" y="351" key="com.intellij.ide.util.TipDialog/1920.23.1680.1027/0.23.1920.973@0.23.1920.973" timestamp="1582848447486" />
     <state x="2420" y="369" key="com.intellij.ide.util.TipDialog/1920.23.1680.1027/0.23.1920.973@1920.23.1680.1027" timestamp="1582590215697" />
-    <state x="1182" y="321" width="680" height="518" key="find.popup" timestamp="1583487019480">
-      <screen x="0" y="23" width="1920" height="973" />
+    <state x="1576" y="432" width="687" height="518" key="find.popup" timestamp="1584865342120">
+      <screen x="0" y="23" width="2560" height="1337" />
     </state>
-    <state x="1576" y="432" width="687" height="518" key="find.popup/0.23.2560.1337@0.23.2560.1337" timestamp="1582727380683" />
+    <state x="1576" y="432" width="687" height="518" key="find.popup/0.23.2560.1337@0.23.2560.1337" timestamp="1584865342120" />
     <state x="1182" y="321" width="680" height="518" key="find.popup/1920.23.1680.1027/0.23.1920.973@0.23.1920.973" timestamp="1583487019480" />
+    <state x="1585" y="328" width="670" height="676" key="search.everywhere.popup" timestamp="1584867467066">
+      <screen x="0" y="23" width="2560" height="1337" />
+    </state>
+    <state x="1585" y="328" width="670" height="676" key="search.everywhere.popup/0.23.2560.1337@0.23.2560.1337" timestamp="1584867467066" />
   </component>
 </project>

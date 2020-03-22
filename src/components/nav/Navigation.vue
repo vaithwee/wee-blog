@@ -3,7 +3,7 @@
     <div class="nav-content">
       <el-row :gutter="20">
         <el-col :span="6">
-          <span class="nav-title">Wee</span><span class="nav-point">.</span>
+          <span class="nav-title">Vaith</span><span class="nav-point">.</span>
         </el-col>
         <el-col :offset="6" :span="12" class="nav-menu">
           <nav-menu/>
@@ -72,6 +72,7 @@
     line-height: 87px;
     font-size: 35px;
     font-weight: bold;
+    font-family: 'Lato', sans-serif;
   }
 
   .nav-point {

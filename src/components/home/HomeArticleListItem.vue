@@ -1,18 +1,71 @@
 <template>
-  <div class="card">
-    <el-image class="card-img-top" fit="cover"
-              :src="article.cover.originalURL" alt="Article Image" style="max-height: 300px"/>
-    <div class="card-body">
-      <div class="article-subtitle">by <a href="#">Wee</a> on {{createDateString}}</div>
-      <h4 class="card-title"><a href="#" data-toggle="read" data-id="1">{{article.title}}</a></h4>
-      <p class="card-text">Mauris eu eros in metus elementum porta eget sed ligula. Praesent consequat, ipsum molestie
-        pellentesque venenatis.</p>
-      <div class="text-right">
-        <router-link :to="'/article/' + article.id" class="card-more" data-toggle="read" data-id="1">Read More <i
+  <el-col :xs="{span: 24}" :sm="{span:(type===3||type===2)?12:24}" :md="{span:(type===3||type===2)?12:24}">
+    <div class="card" v-if="this.type === 0">
+      <el-row :gutter="0">
+        <el-col :xs="{span:24}" :sm="{span:12}" :md="{span:12}" >
+          <div class="card-img" :style="{backgroundImage: 'url(\'' + article.cover.originalURL + '\')'}">
+          </div>
+        </el-col>
+        <el-col :xs="{span:24}"  :sm="{span:12}" :md="{span:12}" >
+          <div class="card-body">
+            <h4 class="card-title">
+              <router-link :to="'/article/' + article.id" data-id="1" data-toggle="read" style="color: black">
+                {{article.title}}
+              </router-link>
+
+
+            </h4>
+            <div class="article-subtitle">by <a href="#">Wee</a> on {{createDateString}}</div>
+            <p class="card-text">我是简介</p>
+            <div class="text-right">
+              <router-link :to="'/article/' + article.id" class="card-more" data-id="1" data-toggle="read">Read More <i
+                  class="ion-ios-arrow-right"></i></router-link>
+            </div>
+          </div>
+
+        </el-col>
+      </el-row>
+    </div>
+
+    <div class="card" v-if="this.type===1">
+      <div class="card-img-hor" :style="{backgroundImage: 'url(\'' + article.cover.originalURL + '\')'}">
+        <div class="overlay card-body">
+          <h4 class="card-title">
+            <router-link :to="'/article/' + article.id" data-id="1" data-toggle="read" style="color: white">
+              {{article.title}}
+            </router-link>
+          </h4>
+          <div class="article-subtitle">by <a href="#">Wee</a> on {{createDateString}}</div>
+          <p class="card-text" style="color: white">我是简介</p>
+          <div class="text-right">
+            <router-link :to="'/article/' + article.id" class="card-more" data-id="1" data-toggle="read" style="color: white">Read More <i
                 class="ion-ios-arrow-right"></i></router-link>
+          </div>
+        </div>
       </div>
     </div>
-  </div>
+
+    <div class="card" v-if="(this.type===3 || this.type === 2)">
+      <div class="card-img" :style="{backgroundImage: 'url(\'' + article.cover.originalURL + '\')'}">
+      </div>
+      <div class="card-body">
+        <h4 class="card-title"> <router-link :to="'/article/' + article.id" data-id="1" data-toggle="read" style="color: black">
+          {{article.title}}
+        </router-link></h4>
+        <div class="article-subtitle">by <a href="#">Wee</a> on {{createDateString}}</div>
+
+        <p class="card-text">Mauris eu eros in metus elementum porta eget sed ligula. Praesent consequat, ipsum molestie
+          pellentesque venenatis.</p>
+        <div class="text-right">
+          <router-link :to="'/article/' + article.id" class="card-more" data-toggle="read" data-id="1">Read More <i
+              class="ion-ios-arrow-right"></i></router-link>
+        </div>
+      </div>
+    </div>
+
+  </el-col>
+
+
 </template>
 
 <script>
@@ -20,6 +73,12 @@
     name: "HomeArticleListItem",
     props: {
       article: null,
+      type: {
+        type: Number,
+        default() {
+          return 0;
+        }
+      }
     },
     computed: {
       createDateString() {
@@ -28,7 +87,7 @@
         let month = date.getMonth();
         let day = date.getDay();
         return month + "月 " + day + "日, " + year;
-      }
+      },
     }
   }
 </script>
@@ -44,28 +103,50 @@
     margin-bottom: 30px;
     overflow: hidden;
     text-align: left;
-    padding: 10px;
   }
 
-  .card-img-top {
 
+
+  .card-img {
+    width: 100%;
+    height: 0;
+    padding-top: 80%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
   }
+
+  .card-img-hor {
+    width: 100%;
+    height: 370px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+  }
+
+
 
   .card-title {
-    font-size: 20px;
-    line-height: 28px;
-    color: #000;
+    font-size: 30px;
+    line-height: 30px;
     text-decoration: none;
+    margin: 0;
   }
 
   .card-title a {
-    color: #000;
     text-decoration: none;
   }
+
+
 
   .article-subtitle {
     font-size: 14px;
     color: #666;
+    margin-top: 10px;
   }
 
   .article-subtitle a {
@@ -90,6 +171,17 @@
   }
 
   .card-body {
-    margin-top: 20px;
+    padding: 20px;
+  }
+
+  .overlay {
+    background-color: #000000;
+    opacity: 0.8;
+    height: 100%;
+    width: 100%;
+    color: white;
+    vertical-align:bottom;
+    text-align: left;
+    padding: 20px;
   }
 </style>

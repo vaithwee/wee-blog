@@ -48,7 +48,8 @@ export function request(config) {
 
 
   const instance = Axios.create({
-    baseURL: 'http://api.vaith.xyz:9088',
+    baseURL: 'http://192.168.3.53:9088',
+    // baseURL: 'http://api.vaith.xyz',
     timeout: 60000,
     transformRequest: [function (data) {
       if (data === undefined) {

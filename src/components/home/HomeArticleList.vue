@@ -3,18 +3,15 @@
     <div class="content">
 
       <el-row>
-        <h2>Wee Blog</h2>
-        <p class="section-lead text-muted">We wrote some articles about whatever was on our heads and most people liked
+        <h2>My Blog</h2>
+        <p class="section-lead text-muted">I wrote some articles about whatever was on our heads and most people liked
           it.</p>
-        <el-col :xs="{span:22,offset:1}" :sm="{span:22, offset:1}" :md="{span:18, offset:3}">
-          <el-row :gutter="30">
-            <el-col :xs="{span:24}" :sm="{span:12}" :md="{span:8}" v-for="(item, index) in list" :key="index">
-              <home-article-list-item :article="item">
+        <el-row :gutter="30" style="max-width: 1024px;margin: auto">
+          <home-article-list-item :article="item" v-for="(item, index) in list" :key="index" :type="index % 4">
 
-              </home-article-list-item>
-            </el-col>
-          </el-row>
-        </el-col>
+          </home-article-list-item>
+
+        </el-row>
       </el-row>
 
     </div>
@@ -47,5 +44,17 @@
 <style scoped>
   .content {
     background-color: #f9f9f9;
+  }
+
+  .content h2 {
+    font-size: 40px;
+    font-weight: bold;
+    font-family: Roboto,sans-serif;
+  }
+
+  .text-muted {
+    font-size: 16px;
+    padding: 10px 10px;
+    /*text-align: left;*/
   }
 </style>

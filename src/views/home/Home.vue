@@ -7,72 +7,23 @@
       </div>
     </section>
 
-    <div style="background-color: white;padding: 100px 10px;margin-left: auto;margin-right: auto">
-      <el-row>
-        <el-col :xs="{span:24}" :sm="{span:22, offset:1}" :md="{span:18, offset:3}">
-          <el-row :gutter="20">
-            <el-col :xs="{span:24}" :sm="{span:8}" :md="{span:8}">
-              <div class="list-item">
-                <div class="icon">
-                  <i class="el-icon-star-off"></i>
-                </div>
-                <div class="desc">
-                  <h2>Based on Bootstrap 4</h2>
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                    tempor incididunt ut labore.
-                  </p>
-                  <a href="#" class="more">Learn More</a>
-                </div>
-              </div>
-            </el-col>
-            <el-col :xs="{span:24}" :sm="{span:8}" :md="{span:6}">
-              <div class="list-item">
-                <div class="icon">
-                  <i class="el-icon-star-off"></i>
-                </div>
-                <div class="desc">
-                  <h2>Based on Bootstrap 4</h2>
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                    tempor incididunt ut labore.
-                  </p>
-                  <a href="#" class="more">Learn More</a>
-                </div>
-              </div>
-            </el-col>
-            <el-col :xs="{span:24}" :sm="{span:8}" :md="{span:6}">
-              <div class="list-item">
-                <div class="icon">
-                  <i class="el-icon-star-off"/>
-                </div>
-                <div class="desc">
-                  <h2>Based on Bootstrap 4</h2>
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                    tempor incididunt ut labore.
-                  </p>
-                  <a href="#" class="more">Learn More</a>
-                </div>
-              </div>
-            </el-col>
-          </el-row>
-        </el-col>
-      </el-row>
 
-    </div>
+
     <home-article-list :list="articles"/>
+    <home-testimonial />
   </scroll>
 </template>
 
 <script>
   import Scroll from "@/components/Scroll";
   import HomeArticleList from "@/components/home/HomeArticleList";
+  import HomeTestimonial from "@/components/home/HomeTestimonial";
   import HomeAPI from "../../network/home_api";
 
   export default {
     name: "Home",
     components: {
+      HomeTestimonial,
       Scroll,
       HomeArticleList
     },
@@ -161,6 +112,7 @@
 
   .text h1 {
     /*margin-top: 25vh;*/
+    font-size: 40px;
     line-height: 400px;
   }
 

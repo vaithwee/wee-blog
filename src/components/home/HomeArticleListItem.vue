@@ -2,11 +2,11 @@
   <el-col :xs="{span: 24}" :sm="{span:smspan}" :md="{span:smspan}">
     <div class="card" v-if="this.type === 0">
       <el-row :gutter="0">
-        <el-col :xs="{span:24}" :sm="{span:12}" :md="{span:12}" >
+        <el-col :xs="{span:24}" :sm="{span:12}" :md="{span:12}">
           <div class="card-img" :style="{backgroundImage: 'url(\'' + article.cover.originalURL + '\')'}">
           </div>
         </el-col>
-        <el-col :xs="{span:24}"  :sm="{span:12}" :md="{span:12}" >
+        <el-col :xs="{span:24}" :sm="{span:12}" :md="{span:12}">
           <div class="card-body">
             <h4 class="card-title">
               <router-link :to="'/article/' + article.id" data-id="1" data-toggle="read" style="color: black">
@@ -19,7 +19,7 @@
             <p class="card-text">我是简介</p>
             <div class="text-right">
               <router-link :to="'/article/' + article.id" class="card-more" data-id="1" data-toggle="read">Read More <i
-                  class="ion-ios-arrow-right"></i></router-link>
+                      class="ion-ios-arrow-right"></i></router-link>
             </div>
           </div>
 
@@ -38,27 +38,31 @@
           <div class="article-subtitle">by <a href="#">Wee</a> on {{createDateString}}</div>
           <p class="card-text" style="color: white">我是简介</p>
           <div class="text-right">
-            <router-link :to="'/article/' + article.id" class="card-more" data-id="1" data-toggle="read" style="color: white">Read More <i
-                class="ion-ios-arrow-right"></i></router-link>
+            <router-link :to="'/article/' + article.id" class="card-more" data-id="1" data-toggle="read"
+                         style="color: white">Read More <i
+                    class="ion-ios-arrow-right"></i></router-link>
           </div>
         </div>
       </div>
     </div>
 
     <div class="card" v-if="(this.type > 1)">
-      <div :class="{'card-img-hor':this.type===4,'card-img':type===2||type===3}" :style="{backgroundImage: 'url(\'' + article.cover.originalURL + '\')'}">
+      <div :class="{'card-img-hor':this.type===4,'card-img':type===2||type===3}"
+           :style="{backgroundImage: 'url(\'' + article.cover.originalURL + '\')'}">
       </div>
       <div class="card-body">
-        <h4 class="card-title"> <router-link :to="'/article/' + article.id" data-id="1" data-toggle="read" style="color: black">
-          {{article.title}}
-        </router-link></h4>
+        <h4 class="card-title">
+          <router-link :to="'/article/' + article.id" data-id="1" data-toggle="read" style="color: black">
+            {{article.title}}
+          </router-link>
+        </h4>
         <div class="article-subtitle">by <a href="#">Wee</a> on {{createDateString}}</div>
 
         <p class="card-text">Mauris eu eros in metus elementum porta eget sed ligula. Praesent consequat, ipsum molestie
           pellentesque venenatis.</p>
         <div class="text-right">
           <router-link :to="'/article/' + article.id" class="card-more" data-toggle="read" data-id="1">Read More <i
-              class="ion-ios-arrow-right"></i></router-link>
+                  class="ion-ios-arrow-right"></i></router-link>
         </div>
       </div>
     </div>
@@ -89,7 +93,7 @@
         return month + "月 " + day + "日, " + year;
       },
       smspan() {
-        if (this.type === 1 || this.type ===0 || this.type === 4) {
+        if (this.type === 1 || this.type === 0 || this.type === 4) {
           return 24;
         } else {
           return 12;
@@ -113,7 +117,6 @@
   }
 
 
-
   .card-img {
     width: 100%;
     height: 0;
@@ -124,7 +127,6 @@
     -webkit-background-size: cover;
     -moz-background-size: cover;
   }
-
 
 
   .card-img-hor {
@@ -138,7 +140,6 @@
   }
 
 
-
   .card-title {
     font-size: 30px;
     line-height: 30px;
@@ -149,7 +150,6 @@
   .card-title a {
     text-decoration: none;
   }
-
 
 
   .article-subtitle {
@@ -172,7 +172,6 @@
   .card-more {
     text-transform: uppercase;
     font-weight: 800;
-    text-transform: 2px;
     color: #000;
     display: inline-block;
     margin-top: 10px;
@@ -189,7 +188,7 @@
     height: 100%;
     width: 100%;
     color: white;
-    vertical-align:bottom;
+    vertical-align: bottom;
     text-align: left;
     padding: 20px;
   }

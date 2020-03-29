@@ -2,16 +2,13 @@
   <scroll @scroll="contentScroll" class="content">
     <section class="hero" ref="hero" :style="{backgroundImage:'url(' + backgroundImage +')'}">
       <div class="overlay"></div>
-      <div class="text" >
-        <h1 v-html="greeting"></h1>
+      <div class="text">
+        <h1>不要发傻, 滚去学习!</h1>
       </div>
     </section>
-
-
-
     <home-article-list :list="articles"/>
-    <home-testimonial />
-    <home-footer />
+    <home-testimonial/>
+    <home-footer/>
   </scroll>
 </template>
 

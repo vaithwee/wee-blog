@@ -1,0 +1,12 @@
+:root {
+    --wee-background-color: #f9f9f9,
+}
+
+.shadow-border {
+    border: none;
+    box-shadow: 0 0 40px rgba(0, 0, 0, .05);
+    -webkit-box-shadow: 0 0 40px rgba(0, 0, 0, .05);
+    -moz-box-shadow: 0 0 40px rgba(0, 0, 0, .05);
+    -ms-box-shadow: 0 0 40px rgba(0, 0, 0, .05);
+    -o-box-shadow: 0 0 40px rgba(0, 0, 0, .05);
+}

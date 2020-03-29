@@ -1,19 +1,14 @@
 <template>
   <section>
-    <div class="content">
-
-      <el-row>
-        <h2>My Blog</h2>
-        <p class="section-lead text-muted">I wrote some articles about whatever was on our heads and most people liked
-          it.</p>
-        <el-row :gutter="30" style="max-width: 1024px;margin: auto">
+    <div class="article-list-content-main">
+      <div class="article-list-content-inner">
+<!--        <h2>我的博客</h2>-->
+<!--        <p class="section-lead text-muted">在这里，我通过文字和图片来表达我的观点</p>-->
+        <el-row :gutter="30">
           <home-article-list-item :article="item" v-for="(item, index) in list" :key="index" :type="index % 4">
-
           </home-article-list-item>
-
         </el-row>
-      </el-row>
-
+      </div>
     </div>
   </section>
 </template>
@@ -32,8 +27,7 @@
       }
     },
     data() {
-      return {
-      }
+      return {}
     },
     components: {
       HomeArticleListItem,
@@ -42,14 +36,20 @@
 </script>
 
 <style scoped>
-  .content {
-    background-color: #f9f9f9;
+  .article-list-content-main {
+    background-color: var(--wee-background-color);
   }
 
-  .content h2 {
+  .article-list-content-inner {
+    max-width: 1024px;
+    margin: auto;
+    padding-top: 30px;
+  }
+
+  .article-list-content-main h2 {
     font-size: 40px;
     font-weight: bold;
-    font-family: Roboto,sans-serif;
+    font-family: Roboto, sans-serif;
   }
 
   .text-muted {

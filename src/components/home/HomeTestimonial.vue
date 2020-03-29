@@ -1,20 +1,22 @@
 <template>
-  <div class="testimonial">
-<!--    <img style="width: 100%; height: 300px;" src="../../assets/test_bg.jpg"  alt=""/>-->
+  <div class="testimonial-content-main">
+    <div class="testimonial-content-inner shadow-border">
+      <div style="padding: 30px">
+        <h2>Testimonial</h2>
+        <el-row>
+          <el-col :md="6">
+            <img class="test-img" src="../../assets/test-img.jpeg" alt=""/>
+          </el-col>
+          <el-col :md="18" class="test-content">
+            <h4>VAITH</h4>
+            <p>一个热爱编程和游戏开发的小码农, 目前正在从事移动端开发工作. </p>
+            <p>热爱学习, 喜欢交流.</p>
+            <p>目前正在学习Unity游戏制作, 游戏天下第一!哈哈!</p>
+          </el-col>
+        </el-row>
+      </div>
 
-      <h2>Testimonial</h2>
-
-      <el-row style="max-width: 1024px;margin: auto">
-        <el-col :md="6">
-          <img class="test-img" src="../../assets/test-img.jpeg"  alt=""/>
-        </el-col>
-        <el-col :md="18" class="test-content">
-          <h4>VAITH</h4>
-          <p>一个热爱编程和游戏开发的小码农, 目前正在从事移动端开发工作. </p>
-          <p>热爱学习, 喜欢交流.</p>
-          <p>目前正在学习Unity游戏制作, 游戏天下第一!哈哈!</p>
-        </el-col>
-      </el-row>
+    </div>
   </div>
 </template>
 
@@ -25,26 +27,34 @@
 </script>
 
 <style scoped>
-.testimonial {
-  background-image: url('../../assets/test_bg.jpg');
-  padding: 30px;
-}
-.testimonial h2 {
-  font-size: 40px;
-  font-weight: bold;
-  color: white;
-  font-family: 'Righteous', cursive;
-}
+
+  .testimonial-content-main {
+    background-color: var(--wee-background-color);
+  }
+
+  .testimonial-content-inner {
+    max-width: 1024px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    background-color: white;
+  }
+
+  .testimonial-content-inner h2 {
+    font-size: 40px;
+    font-weight: bold;
+    color: black;
+  }
 
   .test-content {
-    color: white;
+    color: black;
     text-align: left;
   }
 
-.test-content h4 {
-  font-weight: bold;
-  font-size: 20px;
-}
+  .test-content h4 {
+    font-weight: bold;
+    font-size: 20px;
+  }
 
   .test-content p {
     font-weight: bolder;

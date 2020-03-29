@@ -35,12 +35,13 @@
   .nav-menu-item-title {
     color: aqua;
     position: relative;
+    font-size: 16px;
   }
 
   .nav-menu-item-title:after {
     content: '';
     position: absolute;
-    top: 100%;
+    top: 120%;
     left: 50%;
     background: azure;
     width: 0;

@@ -1,5 +1,5 @@
 <template>
-  <scroll @scroll="contentScroll" class="content">
+  <scroll @scroll="contentScroll" class="content" id="home">
     <section class="hero" ref="hero" :style="{backgroundImage:'url(' + backgroundImage +')'}">
       <div class="overlay"></div>
       <div class="text">
@@ -7,8 +7,8 @@
       </div>
     </section>
     <home-article-list :list="articles"/>
-<!--    <home-testimonial/>-->
-<!--    <home-footer/>-->
+    <home-testimonial/>
+    <home-footer/>
   </scroll>
 </template>
 
@@ -61,6 +61,10 @@
 
 <style scoped>
 
+  #home {
+    --wee-home-height: 70vh;
+  }
+
   .content {
     overflow: hidden;
     position: absolute;
@@ -68,6 +72,7 @@
     bottom: 0;
     right: 0;
     left: 0;
+    background-color: var(--wee-background-color);
   }
 
   .hero .text {
@@ -75,13 +80,7 @@
     top: 0;
     left: 0;
     right: 0;
-    height: 50vh;
-    min-height: 400px;
-    /*transform: translateY(-60%);*/
-    /*-webkit-transform: translateY(-60%);*/
-    /*-moz-transform: translateY(-60%);*/
-    /*-o-transform: translateY(-60%);*/
-    /*-ms-transform: translateY(-60%);*/
+    height: var(--wee-home-height);
     text-align: center;
     color: white;
   }
@@ -93,65 +92,20 @@
     top: 0;
     left: 0;
     right: 0;
-    height: 70vh;
+    height: var(--wee-home-height);
   }
 
   .hero {
-    min-height: 70vh;
+    min-height: var(--wee-home-height);
     background-position: center;
     background-attachment: fixed;
     background-size: cover;
     overflow: auto;
   }
 
-  .bold {
-    font-weight: 600;
-  }
-
   .text h1 {
-    /*margin-top: 25vh;*/
-    font-size: 40px;
-    line-height: 400px;
-  }
-
-  .list-item {
-    display: flex;
-    display: -webkit-flex;
-    width: 100%;
-    text-align: left;
-  }
-
-  .icon {
-    flex: 0 0 65px;
-    -webkit-flex: 0 0 65px;
-    font-size: 45px;
-    line-height: 0;
-    color: #ccc;
-  }
-
-  .desc {
-    flex: 1;
-    -webkit-flex: 1;
-  }
-
-  .list-item .desc h2 {
-    font-size: 16px;
-    text-transform: uppercase;
-    font-weight: 800;
-    letter-spacing: .5px;
-    margin-bottom: 10px;
-    line-height: 1.1;
-  }
-
-  .list-item .desc p {
-    line-height: 28px;
-    font-size: 16px;
-    margin-bottom: 0;
-  }
-
-  .list-item .desc .more {
-    display: inline-block;
-    margin-top: 10px;
+    font-size: 50px;
+    line-height: var(--wee-home-height);
   }
 
 </style>

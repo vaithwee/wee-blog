@@ -4,9 +4,6 @@
       <div style="padding: 30px">
         <h2>Testimonial</h2>
         <el-row>
-          <el-col :md="6">
-            <img class="test-img" src="../../assets/test-img.jpeg" alt=""/>
-          </el-col>
           <el-col :md="18" class="test-content">
             <h4>VAITH</h4>
             <p>一个热爱编程和游戏开发的小码农, 目前正在从事移动端开发工作. </p>

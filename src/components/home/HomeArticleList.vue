@@ -41,7 +41,7 @@
   }
 
   .article-list-content-inner {
-    max-width: 1024px;
+    max-width: var(--wee-max-content-width);
     margin: auto;
     padding-top: 30px;
   }
@@ -49,7 +49,6 @@
   .article-list-content-main h2 {
     font-size: 40px;
     font-weight: bold;
-    font-family: Roboto, sans-serif;
   }
 
   .text-muted {

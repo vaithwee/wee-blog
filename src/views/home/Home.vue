@@ -7,8 +7,8 @@
       </div>
     </section>
     <home-article-list :list="articles"/>
-    <home-testimonial/>
-    <home-footer/>
+<!--    <home-testimonial/>-->
+<!--    <home-footer/>-->
   </scroll>
 </template>
 
@@ -93,13 +93,11 @@
     top: 0;
     left: 0;
     right: 0;
-    height: 50vh;
-    min-height: 400px;
+    height: 70vh;
   }
 
   .hero {
-    height: 50vh;
-    min-height: 400px;
+    min-height: 70vh;
     background-position: center;
     background-attachment: fixed;
     background-size: cover;
@@ -142,7 +140,6 @@
     font-weight: 800;
     letter-spacing: .5px;
     margin-bottom: 10px;
-    font-family: inherit;
     line-height: 1.1;
   }
 

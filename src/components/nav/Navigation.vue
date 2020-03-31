@@ -72,7 +72,6 @@
     line-height: 87px;
     font-size: 35px;
     font-weight: bold;
-    font-family: 'Lato', sans-serif;
   }
 
   .nav-point {

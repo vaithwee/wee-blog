@@ -1,5 +1,5 @@
 <template>
-  <el-col :xs="{span: 24}" :sm="{span:smspan}" :md="{span:smspan}">
+  <el-col :xs="{'span':24}" :sm="{'span':span}" :md="{'span':span}">
     <div class="card" v-if="this.type === 0">
       <el-row :gutter="0">
         <el-col :xs="{span:24}" :sm="{span:12}" :md="{span:12}">
@@ -88,11 +88,11 @@
       createDateString() {
         let date = new Date(this.article.createDate);
         let year = date.getFullYear();
-        let month = date.getMonth();
-        let day = date.getDay();
+        let month = date.getMonth() + 1;
+        let day = date.getDate();
         return month + "月 " + day + "日, " + year;
       },
-      smspan() {
+      span() {
         if (this.type === 1 || this.type === 0 || this.type === 4) {
           return 24;
         } else {

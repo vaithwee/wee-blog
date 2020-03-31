@@ -1,5 +1,6 @@
 :root {
-    --wee-background-color: #f9f9f9,
+    --wee-background-color: #f9f9f9;
+    --wee-max-content-width: 1024px;
 }
 
 .shadow-border {

@@ -16,7 +16,7 @@
 
             </h4>
             <div class="article-subtitle">by <a href="#">Wee</a> on {{createDateString}}</div>
-            <p class="card-text">我是简介</p>
+            <p class="card-text">{{preText}}}</p>
             <div class="text-right">
               <router-link :to="'/article/' + article.id" class="card-more" data-id="1" data-toggle="read">Read More <i
                       class="ion-ios-arrow-right"></i></router-link>
@@ -36,7 +36,7 @@
             </router-link>
           </h4>
           <div class="article-subtitle">by <a href="#">Wee</a> on {{createDateString}}</div>
-          <p class="card-text" style="color: white">我是简介</p>
+          <p class="card-text" style="color: white">{{preText}}}</p>
           <div class="text-right">
             <router-link :to="'/article/' + article.id" class="card-more" data-id="1" data-toggle="read"
                          style="color: white">Read More <i
@@ -58,8 +58,7 @@
         </h4>
         <div class="article-subtitle">by <a href="#">Wee</a> on {{createDateString}}</div>
 
-        <p class="card-text">Mauris eu eros in metus elementum porta eget sed ligula. Praesent consequat, ipsum molestie
-          pellentesque venenatis.</p>
+        <p class="card-text">{{preText}}</p>
         <div class="text-right">
           <router-link :to="'/article/' + article.id" class="card-more" data-toggle="read" data-id="1">Read More <i
                   class="ion-ios-arrow-right"></i></router-link>
@@ -73,6 +72,7 @@
 </template>
 
 <script>
+  import marker from 'marked';
   export default {
     name: "HomeArticleListItem",
     props: {
@@ -98,6 +98,9 @@
         } else {
           return 12;
         }
+      },
+      preText() {
+        return marker(this.article.content, { sanitize: true }).replace(/<[^>]+>/g, "").substr(0, 200);
       }
     }
   }

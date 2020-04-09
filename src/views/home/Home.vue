@@ -1,6 +1,6 @@
 <template>
   <scroll @scroll="contentScroll" class="content" id="home">
-    <section class="hero" ref="hero" :style="{backgroundImage:'url(' + backgroundImage +')'}">
+    <section class="hero" ref="hero">
       <div class="overlay"></div>
       <div class="text">
         <h1>不要发傻, 滚去学习!</h1>
@@ -40,6 +40,7 @@
         this.greeting = res.data.info.greeting;
         this.backgroundImage = res.data.info.cover.originalURL;
         this.articles = res.data.blog;
+        this.$refs.hero.setAttribute('style', 'background-image:url(' + res.data.info.cover.originalURL +')')
       });
     },
     mounted() {

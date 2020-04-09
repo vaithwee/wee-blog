@@ -1,7 +1,7 @@
 <template>
   <scroll class="content">
     <div v-if="article" style="max-width: 1024px;min-height:100%;margin: auto;text-align: left">
-      <h2 class="article-title">{{article.title}}</h2>
+      <h1 class="article-title">{{article.title}}</h1>
 
       <div class="article-subtitle mb-2 text-muted">by <a href="#">Wee</a> on {{createDateString}}</div>
 
@@ -11,7 +11,7 @@
         </el-image>
       </div>
       <div class="article-content">
-        <markdown-preview :initialValue="article.content" theme="dark"/>
+        <markdown-preview :initialValue="article.content" theme="gitHub"/>
       </div>
     </div>
   </scroll>
@@ -96,7 +96,9 @@
   }
 
   .article-content {
-    padding: 10px 10px;
     text-align: left;
+    /*padding-bottom: 30px;*/
+    background-color: white;
+    padding: 20px;
   }
 </style>

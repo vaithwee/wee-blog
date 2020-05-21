@@ -1,14 +1,14 @@
 <template>
   <div class="nav" :style="{'background-color':backgroundColor}">
     <div class="nav-content">
-<!--      <el-row :gutter="20">-->
-<!--        <el-col :span="6">-->
-<!--          <span class="nav-title">Vaith</span><span class="nav-point">.</span>-->
-<!--        </el-col>-->
-<!--        <el-col :offset="6" :span="12" class="nav-menu">-->
-<!--          <nav-menu/>-->
-<!--        </el-col>-->
-<!--      </el-row>-->
+      <el-row :gutter="20">
+        <el-col :span="6">
+          <span class="nav-title">Vaith</span><span class="nav-point">.</span>
+        </el-col>
+        <el-col :offset="6" :span="12" class="nav-menu">
+          <nav-menu/>
+        </el-col>
+      </el-row>
     </div>
 
   </div>
@@ -56,15 +56,15 @@
 
 
   .nav-content {
-    margin: auto;
-    max-width: 1024px;
     position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
     height: 87px;
-    /*margin: 0;*/
+    margin: 0;
     text-align: left;
     z-index: 1;
     padding: 0 20px;
-    background-color: red;
   }
 
   .nav-title {

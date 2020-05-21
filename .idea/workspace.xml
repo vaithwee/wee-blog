@@ -2,11 +2,236 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="85e0ac44-8b1c-44a4-9b06-1b3804cf4751" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/components/markdown/assets/css/dark.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/markdown/assets/css/github.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/markdown/assets/css/index.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/markdown/assets/css/light.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/markdown/assets/css/one-dark.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/markdown/assets/css/theme.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/markdown/assets/font/iconfont.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/markdown/assets/font/iconfont.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/markdown/assets/font/iconfont.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/markdown/assets/font/iconfont.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/markdown/assets/font/iconfont.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/markdown/assets/font/iconfont.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/markdown/assets/js/codemirror/config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/markdown/assets/js/codemirror/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/markdown/assets/js/codemirror/mode/css.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/markdown/assets/js/codemirror/mode/javascript.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/markdown/assets/js/codemirror/mode/markdown.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/markdown/assets/js/codemirror/mode/meta.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/markdown/assets/js/codemirror/mode/xml.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/markdown/assets/js/codemirror/styles/codemirror.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/markdown/assets/js/codemirror/styles/dark.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/markdown/assets/js/hightlight/highlight.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/markdown/assets/js/hightlight/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/markdown/assets/js/hightlight/languages/1c.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/markdown/assets/js/hightlight/languages/abnf.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/markdown/assets/js/hightlight/languages/accesslog.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/markdown/assets/js/hightlight/languages/actionscript.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/markdown/assets/js/hightlight/languages/ada.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/markdown/assets/js/hightlight/languages/angelscript.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/markdown/assets/js/hightlight/languages/apache.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/markdown/assets/js/hightlight/languages/applescript.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/markdown/assets/js/hightlight/languages/arcade.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/markdown/assets/js/hightlight/languages/arduino.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/markdown/assets/js/hightlight/languages/armasm.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/markdown/assets/js/hightlight/languages/asciidoc.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/markdown/assets/js/hightlight/languages/aspectj.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/markdown/assets/js/hightlight/languages/autohotkey.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/markdown/assets/js/hightlight/languages/autoit.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/markdown/assets/js/hightlight/languages/avrasm.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/markdown/assets/js/hightlight/languages/awk.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/markdown/assets/js/hightlight/languages/axapta.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/markdown/assets/js/hightlight/languages/bash.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/markdown/assets/js/hightlight/languages/basic.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/markdown/assets/js/hightlight/languages/bnf.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/markdown/assets/js/hightlight/languages/brainfuck.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/markdown/assets/js/hightlight/languages/cal.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/markdown/assets/js/hightlight/languages/capnproto.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/markdown/assets/js/hightlight/languages/ceylon.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/markdown/assets/js/hightlight/languages/clean.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/markdown/assets/js/hightlight/languages/clojure-repl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/markdown/assets/js/hightlight/languages/clojure.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/markdown/assets/js/hightlight/languages/cmake.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/markdown/assets/js/hightlight/languages/coffeescript.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/markdown/assets/js/hightlight/languages/coq.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/markdown/assets/js/hightlight/languages/cos.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/markdown/assets/js/hightlight/languages/cpp.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/markdown/assets/js/hightlight/languages/crmsh.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/markdown/assets/js/hightlight/languages/crystal.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/markdown/assets/js/hightlight/languages/cs.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/markdown/assets/js/hightlight/languages/csp.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/markdown/assets/js/hightlight/languages/css.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/markdown/assets/js/hightlight/languages/d.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/markdown/assets/js/hightlight/languages/dart.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/markdown/assets/js/hightlight/languages/delphi.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/markdown/assets/js/hightlight/languages/diff.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/markdown/assets/js/hightlight/languages/django.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/markdown/assets/js/hightlight/languages/dns.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/markdown/assets/js/hightlight/languages/dockerfile.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/markdown/assets/js/hightlight/languages/dos.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/markdown/assets/js/hightlight/languages/dsconfig.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/markdown/assets/js/hightlight/languages/dts.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/markdown/assets/js/hightlight/languages/dust.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/markdown/assets/js/hightlight/languages/ebnf.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/markdown/assets/js/hightlight/languages/elixir.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/markdown/assets/js/hightlight/languages/elm.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/markdown/assets/js/hightlight/languages/erb.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/markdown/assets/js/hightlight/languages/erlang-repl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/markdown/assets/js/hightlight/languages/erlang.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/markdown/assets/js/hightlight/languages/excel.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/markdown/assets/js/hightlight/languages/fix.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/markdown/assets/js/hightlight/languages/flix.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/markdown/assets/js/hightlight/languages/fortran.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/markdown/assets/js/hightlight/languages/fsharp.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/markdown/assets/js/hightlight/languages/gams.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/markdown/assets/js/hightlight/languages/gauss.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/markdown/assets/js/hightlight/languages/gcode.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/markdown/assets/js/hightlight/languages/gherkin.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/markdown/assets/js/hightlight/languages/glsl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/markdown/assets/js/hightlight/languages/gml.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/markdown/assets/js/hightlight/languages/go.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/markdown/assets/js/hightlight/languages/golo.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/markdown/assets/js/hightlight/languages/gradle.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/markdown/assets/js/hightlight/languages/groovy.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/markdown/assets/js/hightlight/languages/haml.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/markdown/assets/js/hightlight/languages/handlebars.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/markdown/assets/js/hightlight/languages/haskell.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/markdown/assets/js/hightlight/languages/haxe.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/markdown/assets/js/hightlight/languages/hsp.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/markdown/assets/js/hightlight/languages/htmlbars.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/markdown/assets/js/hightlight/languages/http.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/markdown/assets/js/hightlight/languages/hy.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/markdown/assets/js/hightlight/languages/inform7.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/markdown/assets/js/hightlight/languages/ini.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/markdown/assets/js/hightlight/languages/irpf90.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/markdown/assets/js/hightlight/languages/isbl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/markdown/assets/js/hightlight/languages/java.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/markdown/assets/js/hightlight/languages/javascript.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/markdown/assets/js/hightlight/languages/jboss-cli.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/markdown/assets/js/hightlight/languages/json.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/markdown/assets/js/hightlight/languages/julia-repl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/markdown/assets/js/hightlight/languages/julia.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/markdown/assets/js/hightlight/languages/kotlin.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/markdown/assets/js/hightlight/languages/lasso.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/markdown/assets/js/hightlight/languages/ldif.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/markdown/assets/js/hightlight/languages/leaf.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/markdown/assets/js/hightlight/languages/less.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/markdown/assets/js/hightlight/languages/lisp.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/markdown/assets/js/hightlight/languages/livecodeserver.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/markdown/assets/js/hightlight/languages/livescript.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/markdown/assets/js/hightlight/languages/llvm.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/markdown/assets/js/hightlight/languages/lsl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/markdown/assets/js/hightlight/languages/lua.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/markdown/assets/js/hightlight/languages/makefile.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/markdown/assets/js/hightlight/languages/markdown.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/markdown/assets/js/hightlight/languages/mathematica.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/markdown/assets/js/hightlight/languages/matlab.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/markdown/assets/js/hightlight/languages/maxima.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/markdown/assets/js/hightlight/languages/mel.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/markdown/assets/js/hightlight/languages/mercury.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/markdown/assets/js/hightlight/languages/mipsasm.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/markdown/assets/js/hightlight/languages/mizar.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/markdown/assets/js/hightlight/languages/mojolicious.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/markdown/assets/js/hightlight/languages/monkey.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/markdown/assets/js/hightlight/languages/moonscript.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/markdown/assets/js/hightlight/languages/n1ql.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/markdown/assets/js/hightlight/languages/nginx.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/markdown/assets/js/hightlight/languages/nimrod.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/markdown/assets/js/hightlight/languages/nix.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/markdown/assets/js/hightlight/languages/nsis.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/markdown/assets/js/hightlight/languages/objectivec.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/markdown/assets/js/hightlight/languages/ocaml.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/markdown/assets/js/hightlight/languages/openscad.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/markdown/assets/js/hightlight/languages/oxygene.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/markdown/assets/js/hightlight/languages/parser3.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/markdown/assets/js/hightlight/languages/perl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/markdown/assets/js/hightlight/languages/pf.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/markdown/assets/js/hightlight/languages/pgsql.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/markdown/assets/js/hightlight/languages/php.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/markdown/assets/js/hightlight/languages/plaintext.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/markdown/assets/js/hightlight/languages/pony.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/markdown/assets/js/hightlight/languages/powershell.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/markdown/assets/js/hightlight/languages/processing.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/markdown/assets/js/hightlight/languages/profile.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/markdown/assets/js/hightlight/languages/prolog.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/markdown/assets/js/hightlight/languages/properties.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/markdown/assets/js/hightlight/languages/protobuf.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/markdown/assets/js/hightlight/languages/puppet.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/markdown/assets/js/hightlight/languages/purebasic.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/markdown/assets/js/hightlight/languages/python.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/markdown/assets/js/hightlight/languages/q.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/markdown/assets/js/hightlight/languages/qml.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/markdown/assets/js/hightlight/languages/r.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/markdown/assets/js/hightlight/languages/reasonml.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/markdown/assets/js/hightlight/languages/rib.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/markdown/assets/js/hightlight/languages/roboconf.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/markdown/assets/js/hightlight/languages/routeros.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/markdown/assets/js/hightlight/languages/rsl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/markdown/assets/js/hightlight/languages/ruby.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/markdown/assets/js/hightlight/languages/ruleslanguage.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/markdown/assets/js/hightlight/languages/rust.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/markdown/assets/js/hightlight/languages/sas.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/markdown/assets/js/hightlight/languages/scala.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/markdown/assets/js/hightlight/languages/scheme.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/markdown/assets/js/hightlight/languages/scilab.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/markdown/assets/js/hightlight/languages/scss.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/markdown/assets/js/hightlight/languages/shell.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/markdown/assets/js/hightlight/languages/smali.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/markdown/assets/js/hightlight/languages/smalltalk.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/markdown/assets/js/hightlight/languages/sml.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/markdown/assets/js/hightlight/languages/sqf.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/markdown/assets/js/hightlight/languages/sql.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/markdown/assets/js/hightlight/languages/stan.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/markdown/assets/js/hightlight/languages/stata.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/markdown/assets/js/hightlight/languages/step21.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/markdown/assets/js/hightlight/languages/stylus.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/markdown/assets/js/hightlight/languages/subunit.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/markdown/assets/js/hightlight/languages/swift.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/markdown/assets/js/hightlight/languages/taggerscript.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/markdown/assets/js/hightlight/languages/tap.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/markdown/assets/js/hightlight/languages/tcl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/markdown/assets/js/hightlight/languages/tex.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/markdown/assets/js/hightlight/languages/thrift.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/markdown/assets/js/hightlight/languages/tp.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/markdown/assets/js/hightlight/languages/twig.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/markdown/assets/js/hightlight/languages/typescript.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/markdown/assets/js/hightlight/languages/vala.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/markdown/assets/js/hightlight/languages/vbnet.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/markdown/assets/js/hightlight/languages/vbscript-html.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/markdown/assets/js/hightlight/languages/vbscript.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/markdown/assets/js/hightlight/languages/verilog.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/markdown/assets/js/hightlight/languages/vhdl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/markdown/assets/js/hightlight/languages/vim.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/markdown/assets/js/hightlight/languages/x86asm.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/markdown/assets/js/hightlight/languages/xl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/markdown/assets/js/hightlight/languages/xml.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/markdown/assets/js/hightlight/languages/xquery.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/markdown/assets/js/hightlight/languages/yaml.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/markdown/assets/js/hightlight/languages/zephir.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/markdown/assets/js/marked/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/markdown/components/preview/index.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/markdown/components/pro/index.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/markdown/components/pro/pro.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/markdown/components/simple/index.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/markdown/components/simple/simple.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/markdown/config/marked.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/markdown/config/tools.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/markdown/mixins/common.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/markdown/preview.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/markdown/pro.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/markdown/simple.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/markdown/utils/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/nav/Navigation.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/nav/Navigation.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/config/security_config.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/config/security_config.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/network/request.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/network/request.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/views/article/Article.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/article/Article.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/home/Home.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/home/Home.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,14 +275,13 @@
   </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/theme" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/components/markdown" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
@@ -76,18 +300,19 @@
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/components/markdown" />
+      <recent name="$PROJECT_DIR$/src/theme" />
+      <recent name="$PROJECT_DIR$/src/assets" />
+      <recent name="$PROJECT_DIR$/src/network" />
+      <recent name="$PROJECT_DIR$/src" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/assets/img" />
       <recent name="$PROJECT_DIR$/src/assets/css" />
       <recent name="$PROJECT_DIR$/src/assets" />
       <recent name="$PROJECT_DIR$/src" />
       <recent name="$PROJECT_DIR$/src/views/article" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/theme" />
-      <recent name="$PROJECT_DIR$/src/assets" />
-      <recent name="$PROJECT_DIR$/src/network" />
-      <recent name="$PROJECT_DIR$/src" />
     </key>
   </component>
   <component name="RunManager" selected="npm.npm serve">
@@ -124,18 +349,6 @@
         <item itemvalue="npm.build" />
       </list>
     </recent_temporary>
-  </component>
-  <component name="ServiceViewManager">
-    <option name="viewStates">
-      <list>
-        <serviceView>
-          <treeState>
-            <expand />
-            <select />
-          </treeState>
-        </serviceView>
-      </list>
-    </option>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -174,11 +387,12 @@
       <workItem from="1585621038713" duration="4921000" />
       <workItem from="1585660943701" duration="5423000" />
       <workItem from="1586397381934" duration="2155000" />
+      <workItem from="1590022560444" duration="4268000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="2" />
   </component>
   <component name="WindowStateProjectService">
     <state x="560" y="175" key="#HTML" timestamp="1582704588543">
@@ -197,29 +411,29 @@
       <screen x="0" y="23" width="1920" height="973" />
     </state>
     <state x="698" y="263" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/1920.23.1680.1027/0.23.1920.973@0.23.1920.973" timestamp="1585621260155" />
-    <state width="1878" height="274" key="GridCell.Tab.0.bottom" timestamp="1586401275005">
+    <state width="1878" height="288" key="GridCell.Tab.0.bottom" timestamp="1590027216491">
       <screen x="0" y="23" width="1920" height="973" />
     </state>
     <state width="1238" height="363" key="GridCell.Tab.0.bottom/0.23.2560.1337@0.23.2560.1337" timestamp="1585666414949" />
-    <state width="1878" height="274" key="GridCell.Tab.0.bottom/1920.23.1680.1027/0.23.1920.973@0.23.1920.973" timestamp="1586401275005" />
+    <state width="1878" height="288" key="GridCell.Tab.0.bottom/1920.23.1680.1027/0.23.1920.973@0.23.1920.973" timestamp="1590027216491" />
     <state width="1638" height="294" key="GridCell.Tab.0.bottom/1920.23.1680.1027/0.23.1920.973@1920.23.1680.1027" timestamp="1585883644596" />
-    <state width="1878" height="274" key="GridCell.Tab.0.center" timestamp="1586401275004">
+    <state width="1878" height="288" key="GridCell.Tab.0.center" timestamp="1590027216490">
       <screen x="0" y="23" width="1920" height="973" />
     </state>
     <state width="1238" height="363" key="GridCell.Tab.0.center/0.23.2560.1337@0.23.2560.1337" timestamp="1585666414948" />
-    <state width="1878" height="274" key="GridCell.Tab.0.center/1920.23.1680.1027/0.23.1920.973@0.23.1920.973" timestamp="1586401275004" />
+    <state width="1878" height="288" key="GridCell.Tab.0.center/1920.23.1680.1027/0.23.1920.973@0.23.1920.973" timestamp="1590027216490" />
     <state width="1638" height="294" key="GridCell.Tab.0.center/1920.23.1680.1027/0.23.1920.973@1920.23.1680.1027" timestamp="1585883644595" />
-    <state width="1878" height="274" key="GridCell.Tab.0.left" timestamp="1586401275003">
+    <state width="1878" height="288" key="GridCell.Tab.0.left" timestamp="1590027216489">
       <screen x="0" y="23" width="1920" height="973" />
     </state>
     <state width="1238" height="363" key="GridCell.Tab.0.left/0.23.2560.1337@0.23.2560.1337" timestamp="1585666414948" />
-    <state width="1878" height="274" key="GridCell.Tab.0.left/1920.23.1680.1027/0.23.1920.973@0.23.1920.973" timestamp="1586401275003" />
+    <state width="1878" height="288" key="GridCell.Tab.0.left/1920.23.1680.1027/0.23.1920.973@0.23.1920.973" timestamp="1590027216489" />
     <state width="1638" height="294" key="GridCell.Tab.0.left/1920.23.1680.1027/0.23.1920.973@1920.23.1680.1027" timestamp="1585883644594" />
-    <state width="1878" height="274" key="GridCell.Tab.0.right" timestamp="1586401275004">
+    <state width="1878" height="288" key="GridCell.Tab.0.right" timestamp="1590027216490">
       <screen x="0" y="23" width="1920" height="973" />
     </state>
     <state width="1238" height="363" key="GridCell.Tab.0.right/0.23.2560.1337@0.23.2560.1337" timestamp="1585666414949" />
-    <state width="1878" height="274" key="GridCell.Tab.0.right/1920.23.1680.1027/0.23.1920.973@0.23.1920.973" timestamp="1586401275004" />
+    <state width="1878" height="288" key="GridCell.Tab.0.right/1920.23.1680.1027/0.23.1920.973@0.23.1920.973" timestamp="1590027216490" />
     <state width="1638" height="294" key="GridCell.Tab.0.right/1920.23.1680.1027/0.23.1920.973@1920.23.1680.1027" timestamp="1585883644595" />
     <state x="461" y="148" width="1396" height="737" key="SettingsEditor" timestamp="1585644073540">
       <screen x="0" y="23" width="1920" height="973" />
@@ -231,11 +445,11 @@
     <state x="761" y="474" key="com.intellij.ide.util.TipDialog/0.23.2560.1337@0.23.2560.1337" timestamp="1585661257416" />
     <state x="571" y="351" key="com.intellij.ide.util.TipDialog/1920.23.1680.1027/0.23.1920.973@0.23.1920.973" timestamp="1586397391580" />
     <state x="2420" y="369" key="com.intellij.ide.util.TipDialog/1920.23.1680.1027/0.23.1920.973@1920.23.1680.1027" timestamp="1585270643967" />
-    <state x="1576" y="432" width="687" height="518" key="find.popup" timestamp="1585666835808">
-      <screen x="0" y="23" width="2560" height="1337" />
+    <state x="566" y="206" width="680" height="546" key="find.popup" timestamp="1590027462401">
+      <screen x="0" y="23" width="1920" height="973" />
     </state>
     <state x="1576" y="432" width="687" height="518" key="find.popup/0.23.2560.1337@0.23.2560.1337" timestamp="1585666835808" />
-    <state x="1182" y="321" width="680" height="518" key="find.popup/1920.23.1680.1027/0.23.1920.973@0.23.1920.973" timestamp="1585624196750" />
+    <state x="566" y="206" width="680" height="546" key="find.popup/1920.23.1680.1027/0.23.1920.973@0.23.1920.973" timestamp="1590027462401" />
     <state x="1189" y="245" width="670" height="492" key="search.everywhere.popup" timestamp="1585276792714">
       <screen x="0" y="23" width="1920" height="973" />
     </state>
@@ -247,8 +461,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/src/network/request.js</url>
-          <line>59</line>
-          <properties lambdaOrdinal="-1" />
+          <line>58</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
       </breakpoints>

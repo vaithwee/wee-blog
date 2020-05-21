@@ -1,6 +1,6 @@
 let SecurityConfig = {
-  accessKey: "TawJcCYyWujM9Eev",
-  securityKey: "ElBZ8fDjOb2haCoA",
+  accessKey: "LLFebRZCfs275HM9ulPL6xggxXssdfMy",
+  securityKey: "xY8VSX1pYK296OdbSVLpplnEsBFWHy0G",
   appID:1,
   en:0,
 };

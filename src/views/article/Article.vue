@@ -11,7 +11,7 @@
         </el-image>
       </div>
       <div class="article-content">
-        <markdown-preview :initialValue="article.content" theme="gitHub"/>
+        <markdown :initialValue="article.content" theme="oneDark"/>
       </div>
     </div>
   </scroll>
@@ -19,14 +19,14 @@
 
 <script>
   import Scroll from "@/components/Scroll";
-  import {MarkdownPreview} from 'vue-meditor';
+  import markdown from "@/components/markdown/preview"
   import ArticleAPI from "../../network/article_api";
 
   export default {
     name: "BlogArticle",
     components: {
       Scroll,
-      MarkdownPreview,
+      markdown,
     },
     data() {
       return {

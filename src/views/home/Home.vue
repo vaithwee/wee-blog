@@ -1,14 +1,21 @@
 <template>
   <scroll @scroll="contentScroll" class="content" id="home">
     <section class="hero" ref="hero">
-      <div class="overlay"></div>
+      <!--      <div class="overlay"></div>-->
       <div class="text">
-        <h1>不要发傻, 滚去学习!</h1>
+        <div class="greeting-bg">
+          <div class="greeting-content">
+            <span>{{greeting}}</span> <br>
+            <span>不要发傻, 滚去学习!</span>
+          </div>
+        </div>
+
+
       </div>
     </section>
     <home-article-list :list="articles"/>
-    <home-testimonial/>
-    <home-footer/>
+    <!--    <home-testimonial/>-->
+    <!--    <home-footer/>-->
   </scroll>
 </template>
 
@@ -40,20 +47,20 @@
         this.greeting = res.data.info.greeting;
         this.backgroundImage = res.data.info.cover.originalURL;
         this.articles = res.data.blog;
-        this.$refs.hero.setAttribute('style', 'background-image:url(' + res.data.info.cover.originalURL +')')
+        this.$refs.hero.setAttribute('style', 'background-image:url(' + res.data.info.cover.originalURL + ')')
       });
     },
     mounted() {
-      this.$parent.$refs.nav.changeBgColor("rgba(0,0,0,0)");
+      this.$parent.$refs.nav.changeTransparent(true);
 
     },
     methods: {
       contentScroll(position) {
         let min = -(this.$refs.hero.offsetHeight - 87);
         if (position.y < min) {
-          this.$parent.$refs.nav.changeBgColor("rgba(0,0,0,1)");
+          this.$parent.$refs.nav.changeTransparent(false);
         } else {
-          this.$parent.$refs.nav.changeBgColor("rgba(0,0,0,0)");
+          this.$parent.$refs.nav.changeTransparent(true);
         }
       }
     }
@@ -63,13 +70,13 @@
 <style scoped>
 
   #home {
-    --wee-home-height: 70vh;
+    --wee-home-height: 50vh;
   }
 
   .content {
     overflow: hidden;
     position: absolute;
-    top: 0;
+    top: -80px;
     bottom: 0;
     right: 0;
     left: 0;
@@ -77,36 +84,55 @@
   }
 
   .hero .text {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
     height: var(--wee-home-height);
     text-align: center;
     color: white;
-  }
-
-  .overlay {
-    background-color: #000;
-    opacity: .85;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: var(--wee-home-height);
+    /*width: 100%;*/
+    max-width: var(--wee-max-content-width);
+    /*background-color: red;*/
+    margin: auto;
   }
 
   .hero {
     min-height: var(--wee-home-height);
     background-position: center;
-    background-attachment: fixed;
+    /*background-attachment: fixed;*/
     background-size: cover;
-    overflow: auto;
+    /*overflow: auto;*/
   }
 
   .text h1 {
-    font-size: 50px;
-    line-height: var(--wee-home-height);
+    /*font-size: 50px;*/
+    color: black;
+    /*line-height: var(--wee-home-height);*/
+  }
+
+  .text p {
+    color: black;
+  }
+
+  .text span {
+    font-weight: bold;
+    color: black;
+  }
+
+  .greeting-bg {
+    /*position: absolute;*/
+    /*top: 25vh;*/
+    /*bottom: 0;*/
+    /*left: 0;*/
+    /*right: 0;*/
+    width: 100%;
+    padding-top: 35vh;
+    height: 15vh;
+    max-width: 550px;
+    /*background-color: white;*/
+  }
+
+  .greeting-content {
+    background-color: white;height: 25vh;
+    padding: 2em;
+    text-align: left;
   }
 
 </style>

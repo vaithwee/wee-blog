@@ -1,11 +1,9 @@
 <template>
-  <scroll class="content">
-    <div>
-      <el-row style="margin: auto;max-width: 800px;padding-top: 30px">
-        <home-article-list-item v-for="(item, index) in list" :key="index" :article="item" :type="4" />
-      </el-row>
-    </div>
-  </scroll>
+  <div class="content">
+    <ul >
+      <li v-for="i in 200" class="infinite-list-item">{{ i }}</li>
+    </ul>
+  </div>
 </template>
 
 <script>
@@ -28,22 +26,25 @@
     },
     created() {
       ArticleAPI.getArticleList(this.page, this.size).then(res => {
-        this.list = res.data;
+        this.list = res.data.data;
       });
     },
     mounted() {
-      this.$parent.$refs.nav.changeBgColor("rgba(0,0,0,1)");
+      this.$parent.$refs.nav.changeTransparent(false);
     },
   }
 </script>
 
 <style scoped>
   .content {
-    overflow: hidden;
-    position: absolute;
-    top: 87px;
-    bottom: 0;
-    right: 0;
-    left: 0;
+    max-width: 1024px;
+    margin: auto;
+    /*overflow: hidden;*/
+    /*position: absolute;*/
+    /*top: 0;*/
+    /*bottom: 0;*/
+    /*right: 0;*/
+    /*left: 0;*/
+    height: 100%;
   }
 </style>

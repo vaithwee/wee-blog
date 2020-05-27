@@ -29,7 +29,11 @@
         click: true,
         probeType: 3,
         mouseWheel: true,
-        bounce: this.bounce
+        bounce: this.bounce,
+        scrollbar: {
+          fade: true,
+          interactive: true // 1.8.0 新增
+        },
       });
 
       this.scroll.on("scroll", (position) => {

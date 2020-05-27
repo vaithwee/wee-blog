@@ -33,9 +33,10 @@
 
 <style scoped>
   .nav-menu-item-title {
-    color: aqua;
+    color: black;
     position: relative;
     font-size: 16px;
+    font-weight: 400;
   }
 
   .nav-menu-item-title:after {
@@ -43,7 +44,7 @@
     position: absolute;
     top: 120%;
     left: 50%;
-    background: azure;
+    background: black;
     width: 0;
     height: 2px;
     transform: translateX(-50%);
@@ -58,7 +59,7 @@
   }
 
   .nav-menu-item-title:hover {
-    color: #fff;
+    color: black;
   }
 
   .nav-menu-item-title:hover:after {
@@ -70,7 +71,7 @@
   }
 
   .active {
-    color: white;
+    color: black;
   }
 
   .nav-menu-item-title.active:after {
@@ -78,7 +79,7 @@
   }
 
   .nav-link {
-    color: white;
+    color: black;
     text-decoration: none;
   }
 </style>

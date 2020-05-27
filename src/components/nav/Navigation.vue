@@ -1,14 +1,14 @@
 <template>
-  <div class="nav" :style="{'background-color':backgroundColor}">
+  <div class="nav" :class="{
+    'shadow-border':!isTransparent,
+    'nav-bg-color-normal':!isTransparent,
+    'nav-bg-color-transparent':isTransparent,
+    }">
     <div class="nav-content">
-      <el-row :gutter="20">
-        <el-col :span="6">
-          <span class="nav-title">Vaith</span><span class="nav-point">.</span>
-        </el-col>
-        <el-col :offset="6" :span="12" class="nav-menu">
-          <nav-menu/>
-        </el-col>
-      </el-row>
+      <span class="nav-title" :class="{
+        'nav-title-color-normal':!isTransparent,
+        'nav-title-color-transparent':isTransparent,
+      }">Flutter For Web</span><span class="nav-point">.</span>
     </div>
 
   </div>
@@ -23,21 +23,21 @@
       NavMenu
     },
     props: {
-      bgColor: {
-        type: String,
+      transparent: {
+        type: Boolean,
         default() {
-          return 'rgba(0,0,0,0.85)';
+          return true;
         }
       }
     },
     data() {
       return {
-        backgroundColor: this.bgColor
+        isTransparent: this.transparent
       }
     },
     methods: {
-      changeBgColor(value) {
-        this.backgroundColor = value;
+      changeTransparent(value) {
+        this.isTransparent = value;
       }
     }
   }
@@ -48,42 +48,53 @@
     position: fixed;
     display: flex;
     width: 100%;
-    height: 87px;
+    height: var(--wee-nav-height);
     text-align: left;
     top: 0;
     z-index: 1;
   }
 
+  .nav-bg-color-normal {
+    background-color: white;
+  }
+
+  .nav-bg-color-transparent {
+    background-color: #00000000;
+  }
 
   .nav-content {
-    position: absolute;
-    top: 0;
-    left: 0;
+    max-width: var(--wee-max-content-width);
+    height: 80px;
     width: 100%;
-    height: 87px;
-    margin: 0;
-    text-align: left;
-    z-index: 1;
-    padding: 0 20px;
+    margin: auto;
+    padding-left: 10px;
+    padding-right: 10px;
   }
 
   .nav-title {
-    color: white;
-    line-height: 87px;
+    line-height: var(--wee-nav-height);
     font-size: 35px;
     font-weight: bold;
+  }
+
+  .nav-title-color-normal {
+    color: black;
+  }
+
+  .nav-title-color-transparent {
+    color: white;
   }
 
   .nav-point {
     padding-left: 3px;
     color: cornflowerblue;
-    line-height: 87px;
+    line-height: var(--wee-nav-height);
     font-size: 35px;
     font-weight: bold;
   }
 
   .nav-menu {
     text-align: right;
-    height: 87px;
+    height: var(--wee-nav-height);
   }
 </style>

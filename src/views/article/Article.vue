@@ -49,7 +49,7 @@
       }
     },
     mounted() {
-      this.$parent.$refs.nav.changeBgColor("rgba(0,0,0,1)");
+      this.$parent.$refs.nav.changeTransparent(false);
     },
   }
 </script>
@@ -58,7 +58,7 @@
   .content {
     overflow: hidden;
     position: absolute;
-    top: 87px;
+    top: 0;
     bottom: 0;
     right: 0;
     left: 0;

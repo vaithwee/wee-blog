@@ -1,7 +1,6 @@
 <template>
   <div id="app">
-    <navigation ref="nav" v-model="drawer"/>
-    <navigation-drawer v-model="drawer" />
+    <navigation ref="nav"/>
 <!--    <div class="app-content">-->
 <!--      <router-view></router-view>-->
 <!--    </div>-->
@@ -21,19 +20,12 @@
 <script>
 
   import Navigation from "./components/nav/Navigation";
-  import NavigationDrawer from "./components/nav/NavigationDrawer";
 
   export default {
     name: 'App',
     components: {
-      NavigationDrawer,
       Navigation,
     },
-    data() {
-      return {
-        drawer: false,
-      }
-    }
   }
 </script>
 

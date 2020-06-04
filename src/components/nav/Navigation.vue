@@ -11,13 +11,21 @@
       }">Vaith</span><span class="nav-point">.</span>
       <div style="float: right">
         <p :class="{'hidden':isMiniScreen}">hello pc</p>
-        <el-button @click="changedDrawerState(true)" type="primary" style="margin-left: 16px;" :class="{'hidden':isMiniScreen}">
+        <el-button @click="drawer = true" type="primary" style="margin-left: 16px;">
           点我打开
         </el-button>
 
+        <el-drawer
+                title="我是标题"
+                :append-to-body="true"
+                :visible.sync="drawer"
+                direction="ttb"
+                :before-close="handleClose">
+          <span>我来啦!</span>
+        </el-drawer>
+
       </div>
     </div>
-
 
 
   </div>
@@ -31,10 +39,6 @@
     components: {
       NavMenu
     },
-    model: {
-      prop: 'drawer',
-      event: 'updateDrawerState'
-    },
     props: {
       transparent: {
         type: Boolean,
@@ -42,18 +46,12 @@
           return true;
         }
       },
-      drawer: {
-        type: Boolean,
-        default() {
-          return false;
-        }
-      },
-
     },
     data() {
       return {
         isTransparent: this.transparent,
         isMiniScreen: false,
+        drawer: false,
       }
     },
     methods: {
@@ -62,13 +60,16 @@
       },
       changedDrawerState(value) {
         this.$emit("updateDrawerState", value);
+      },
+      handleClose(done) {
+        done();
       }
     },
     mounted() {
       const min = 600;
       this.isMiniScreen = document.documentElement.clientWidth < min;
       const that = this;
-      window.onresize = function tmp () {
+      window.onresize = function tmp() {
         that.isMiniScreen = document.documentElement.clientWidth < min;
       }
     }

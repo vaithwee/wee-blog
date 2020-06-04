@@ -35,7 +35,7 @@
   .nav-menu-item-title {
     color: black;
     position: relative;
-    font-size: 16px;
+    /*font-size: 12px;*/
     font-weight: 400;
   }
 
@@ -44,7 +44,7 @@
     position: absolute;
     top: 120%;
     left: 50%;
-    background: black;
+    background: rgba(0, 0, 0, 0.7);
     width: 0;
     height: 2px;
     transform: translateX(-50%);
@@ -59,11 +59,11 @@
   }
 
   .nav-menu-item-title:hover {
-    color: black;
+    color: rgba(0, 0, 0, 0.7);
   }
 
   .nav-menu-item-title:hover:after {
-    width: 20px;
+    width: 80%;
   }
 
   .nav-menu-item {
@@ -71,15 +71,15 @@
   }
 
   .active {
-    color: black;
+    color: rgba(0, 0, 0, 0.7);
   }
 
   .nav-menu-item-title.active:after {
-    width: 20px;
+    width: 95%;
   }
 
   .nav-link {
-    color: black;
+    color: rgba(0, 0, 0, 0.7);
     text-decoration: none;
   }
 </style>

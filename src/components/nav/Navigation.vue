@@ -10,18 +10,18 @@
         'nav-title-color-transparent':isTransparent,
       }">Vaith</span><span class="nav-point">.</span>
       <div style="float: right">
+        <nav-menu :class="{'hidden':isMiniScreen}" />
         <div :class="{'hidden':!isMiniScreen}" @click="drawer = true" class="nav-menu">
           <i class="el-icon-menu" style="margin-top: 8px"></i>
         </div>
-
         <el-drawer
                 :append-to-body="true"
                 :visible.sync="drawer"
                 direction="ttb"
                 :with-header="false"
                 :before-close="handleClose">
-          <div style="background-color: red">
-            <p>hellow</p>
+          <div style="width: 100%;height: 100%;text-align: left;padding-top: 30px">
+            <nav-menu direction="vertical" />
           </div>
         </el-drawer>
 
@@ -34,10 +34,12 @@
 
 <script>
   import NavMenu from "./NavMenu";
+  import NavMenuItem from "./NavMenuItem";
 
   export default {
     name: "Navigation",
     components: {
+      NavMenuItem,
       NavMenu
     },
     props: {

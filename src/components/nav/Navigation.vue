@@ -1,6 +1,6 @@
 <template>
   <div class="nav" :class="{
-    'shadow-border':!isTransparent,
+    'shadow-border':true,
     'nav-bg-color-normal':!isTransparent,
     'nav-bg-color-transparent':isTransparent,
     }">
@@ -10,18 +10,19 @@
         'nav-title-color-transparent':isTransparent,
       }">Vaith</span><span class="nav-point">.</span>
       <div style="float: right">
-        <p :class="{'hidden':isMiniScreen}">hello pc</p>
-        <el-button @click="drawer = true" type="primary" style="margin-left: 16px;">
-          点我打开
-        </el-button>
+        <div :class="{'hidden':!isMiniScreen}" @click="drawer = true" class="nav-menu">
+          <i class="el-icon-menu" style="margin-top: 8px"></i>
+        </div>
 
         <el-drawer
-                title="我是标题"
                 :append-to-body="true"
                 :visible.sync="drawer"
                 direction="ttb"
+                :with-header="false"
                 :before-close="handleClose">
-          <span>我来啦!</span>
+          <div style="background-color: red">
+            <p>hellow</p>
+          </div>
         </el-drawer>
 
       </div>
@@ -129,7 +130,12 @@
   }
 
   .nav-menu {
-    text-align: right;
-    height: var(--wee-nav-height);
+    margin-top: 24px;
+    height: 32px;
+    width: 44px;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 3px;
+    color: black;
   }
 </style>

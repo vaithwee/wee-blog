@@ -1,6 +1,6 @@
 <template>
   <div class="nav" :class="{
-    'shadow-border':true,
+    'shadow-border':!isTransparent,
     'nav-bg-color-normal':!isTransparent,
     'nav-bg-color-transparent':isTransparent,
     }">

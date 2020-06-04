@@ -3,8 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="85e0ac44-8b1c-44a4-9b06-1b3804cf4751" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/nav/NavMenu.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/nav/NavMenu.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/nav/NavMenuItem.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/nav/NavMenuItem.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/nav/Navigation.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/nav/Navigation.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -167,7 +167,7 @@
       <workItem from="1590541620994" duration="6631000" />
       <workItem from="1590561283685" duration="3131000" />
       <workItem from="1590631119421" duration="5695000" />
-      <workItem from="1591240180761" duration="14650000" />
+      <workItem from="1591240180761" duration="15066000" />
     </task>
     <servers />
   </component>

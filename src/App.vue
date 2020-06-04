@@ -1,18 +1,9 @@
 <template>
   <div id="app">
     <navigation ref="nav"/>
-<!--    <div class="app-content">-->
-<!--      <router-view></router-view>-->
-<!--    </div>-->
-<!--    <el-button @click="drawer = true" type="primary" style="margin-left: 16px;" :class="{'hidden':isMiniScreen}">-->
-<!--      点我打开-->
-<!--    </el-button>-->
-<!--    <el-drawer-->
-<!--            title="我是标题"-->
-<!--            :visible.sync="drawer"-->
-<!--            direction="rtl">-->
-<!--      <span>我来啦!</span>-->
-<!--    </el-drawer>-->
+    <div class="app-content">
+      <router-view></router-view>
+    </div>
   </div>
 
 </template>

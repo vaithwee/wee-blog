@@ -44,8 +44,6 @@
     font-size: 12px;
     letter-spacing: 1px;
     list-style: none;
-    position: fixed;
-
   }
 
   .nav-horizontal {

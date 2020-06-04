@@ -1,9 +1,19 @@
 <template>
   <div id="app">
-    <navigation ref="nav"/>
-    <div class="app-content">
-      <router-view></router-view>
-    </div>
+    <navigation ref="nav" v-model="drawer"/>
+    <navigation-drawer v-model="drawer" />
+<!--    <div class="app-content">-->
+<!--      <router-view></router-view>-->
+<!--    </div>-->
+<!--    <el-button @click="drawer = true" type="primary" style="margin-left: 16px;" :class="{'hidden':isMiniScreen}">-->
+<!--      点我打开-->
+<!--    </el-button>-->
+<!--    <el-drawer-->
+<!--            title="我是标题"-->
+<!--            :visible.sync="drawer"-->
+<!--            direction="rtl">-->
+<!--      <span>我来啦!</span>-->
+<!--    </el-drawer>-->
   </div>
 
 </template>
@@ -11,11 +21,18 @@
 <script>
 
   import Navigation from "./components/nav/Navigation";
+  import NavigationDrawer from "./components/nav/NavigationDrawer";
 
   export default {
     name: 'App',
     components: {
+      NavigationDrawer,
       Navigation,
+    },
+    data() {
+      return {
+        drawer: false,
+      }
     }
   }
 </script>

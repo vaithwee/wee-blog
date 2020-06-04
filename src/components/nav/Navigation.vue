@@ -8,8 +8,17 @@
       <span class="nav-title" :class="{
         'nav-title-color-normal':!isTransparent,
         'nav-title-color-transparent':isTransparent,
-      }">Flutter For Web</span><span class="nav-point">.</span>
+      }">Vaith</span><span class="nav-point">.</span>
+      <div style="float: right">
+        <p :class="{'hidden':isMiniScreen}">hello pc</p>
+        <el-button @click="changedDrawerState(true)" type="primary" style="margin-left: 16px;" :class="{'hidden':isMiniScreen}">
+          点我打开
+        </el-button>
+
+      </div>
     </div>
+
+
 
   </div>
 </template>
@@ -22,22 +31,45 @@
     components: {
       NavMenu
     },
+    model: {
+      prop: 'drawer',
+      event: 'updateDrawerState'
+    },
     props: {
       transparent: {
         type: Boolean,
         default() {
           return true;
         }
-      }
+      },
+      drawer: {
+        type: Boolean,
+        default() {
+          return false;
+        }
+      },
+
     },
     data() {
       return {
-        isTransparent: this.transparent
+        isTransparent: this.transparent,
+        isMiniScreen: false,
       }
     },
     methods: {
       changeTransparent(value) {
         this.isTransparent = value;
+      },
+      changedDrawerState(value) {
+        this.$emit("updateDrawerState", value);
+      }
+    },
+    mounted() {
+      const min = 600;
+      this.isMiniScreen = document.documentElement.clientWidth < min;
+      const that = this;
+      window.onresize = function tmp () {
+        that.isMiniScreen = document.documentElement.clientWidth < min;
       }
     }
   }
@@ -72,9 +104,11 @@
   }
 
   .nav-title {
+    margin-left: 10px;
+    font-family: "Roboto", Arial, sans-serif;
     line-height: var(--wee-nav-height);
-    font-size: 35px;
-    font-weight: bold;
+    font-size: 24px;
+    font-weight: 700;
   }
 
   .nav-title-color-normal {
@@ -82,7 +116,7 @@
   }
 
   .nav-title-color-transparent {
-    color: white;
+    color: black;
   }
 
   .nav-point {

@@ -1,7 +1,7 @@
 :root {
     --wee-background-color: white;
     --wee-max-content-width: 1024px;
-    --wee-nav-height: 75px;
+    --wee-nav-height: 80px;
 }
 
 .shadow-border {
@@ -11,4 +11,8 @@
     -moz-box-shadow: 0 0 40px rgba(0, 0, 0, .05);
     -ms-box-shadow: 0 0 40px rgba(0, 0, 0, .05);
     -o-box-shadow: 0 0 40px rgba(0, 0, 0, .05);
+}
+
+.hidden {
+    display: none;
 }

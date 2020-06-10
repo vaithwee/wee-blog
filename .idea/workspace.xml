@@ -2,10 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="85e0ac44-8b1c-44a4-9b06-1b3804cf4751" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/components/RouteTipView.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/home/HomeArticleList.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/home/HomeArticleList.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/home/HomeArticleListItem.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/home/HomeArticleListItem.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/nav/Navigation.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/nav/Navigation.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/views/blog/Blog.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/blog/Blog.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -170,7 +169,7 @@
       <workItem from="1590631119421" duration="5695000" />
       <workItem from="1591240180761" duration="17332000" />
       <workItem from="1591322890937" duration="2181000" />
-      <workItem from="1591751591998" duration="18590000" />
+      <workItem from="1591751591998" duration="20141000" />
     </task>
     <servers />
   </component>

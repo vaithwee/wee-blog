@@ -85,7 +85,7 @@
   .card {
     position: relative;
     border: none;
-    margin-bottom: 30px;
+    margin-bottom: 60px;
     text-align: left;
     /*height: 390px;*/
     /*overflow: hidden;*/

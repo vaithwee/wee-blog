@@ -1,31 +1,38 @@
 <template>
-  <div class="content">
-    <el-row :gutter="30">
-      <el-col :xs="{'span':24}" :sm="{'span':6, 'push':18}" :md="{'span':6,'push':18}">
-        <p>category</p>
-      </el-col>
-      <el-col :xs="{'span':24}" :sm="{'span':18, 'pull':6}" :md="{'span':18, 'pull':6}">
-        <el-row :gutter="30">
-          <home-article-list-item :article="item" v-for="(item, index) in list" :key="index" :type="index % 5 ===4 ? 'va' : 'vh'">
-          </home-article-list-item>
-        </el-row>
-      </el-col>
+  <div>
+    <route-tip-view />
+    <div class="content">
+
+      <el-row :gutter="30">
+        <el-col :xs="{'span':24}" :sm="{'span':18}" :md="{'span':18}">
+          <el-row :gutter="30">
+            <home-article-list-item :article="item" v-for="(item, index) in list" :key="index" :type="index % 5 ===4 ? 'va' : 'vh'">
+            </home-article-list-item>
+          </el-row>
+        </el-col>
+        <el-col :xs="{'span':24}" :sm="{'span':6}" :md="{'span':6}">
+          <p>category</p>
+        </el-col>
 
 
-    </el-row>
+      </el-row>
+    </div>
   </div>
+
 </template>
 
 <script>
   import Scroll from "../../components/Scroll";
   import HomeArticleListItem from "../../components/home/HomeArticleListItem";
   import ArticleAPI from "@/network/article_api";
+  import RouteTipView from "../../components/RouteTipView";
 
   export default {
     name: "Blog",
     components: {
       Scroll,
       HomeArticleListItem,
+      RouteTipView,
     },
     data() {
       return {
@@ -49,7 +56,7 @@
   .content {
     max-width: 1024px;
     margin: auto;
-    padding: 10px;
+    padding: 40px;
     /*overflow: hidden;*/
     /*position: absolute;*/
     /*top: 0;*/

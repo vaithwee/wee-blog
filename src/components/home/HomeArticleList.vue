@@ -5,7 +5,7 @@
 <!--        <h2>我的博客</h2>-->
 <!--        <p class="section-lead text-muted">在这里，我通过文字和图片来表达我的观点</p>-->
         <el-row :gutter="30">
-          <home-article-list-item :article="item" v-for="(item, index) in list" :key="index" :type="index % 4">
+          <home-article-list-item :article="item" v-for="(item, index) in list" :key="index" :type=" type(index)">
           </home-article-list-item>
         </el-row>
       </div>
@@ -31,6 +31,15 @@
     },
     components: {
       HomeArticleListItem,
+    },
+    methods: {
+      type(index) {
+        if (index % 5 === 4) {
+          return 'double';
+        } else  {
+          return 'single';
+        }
+      }
     }
   }
 </script>
@@ -44,6 +53,8 @@
     max-width: var(--wee-max-content-width);
     margin: auto;
     padding-top: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
   }
 
   .article-list-content-main h2 {

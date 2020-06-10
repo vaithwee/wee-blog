@@ -1,68 +1,21 @@
 <template>
   <el-col :xs="{'span':24}" :sm="{'span':span}" :md="{'span':span}">
-    <div class="card" v-if="this.type === 0">
-      <el-row :gutter="0">
-        <el-col :xs="{span:24}" :sm="{span:12}" :md="{span:12}">
-          <div class="card-img" :style="{backgroundImage: 'url(\'' + article.cover.originalURL + '\')'}">
-          </div>
-        </el-col>
-        <el-col :xs="{span:24}" :sm="{span:12}" :md="{span:12}">
-          <div class="card-body">
-            <h4 class="card-title">
-              <router-link :to="'/article/' + article.id" data-id="1" data-toggle="read" style="color: black">
-                {{article.title}}
-              </router-link>
-
-
-            </h4>
-            <div class="article-subtitle">by <a href="#">Wee</a> on {{createDateString}}</div>
-            <p class="card-text">{{preText}}}</p>
-            <div class="text-right">
-              <router-link :to="'/article/' + article.id" class="card-more" data-id="1" data-toggle="read">Read More <i
-                      class="ion-ios-arrow-right"></i></router-link>
-            </div>
-          </div>
-
-        </el-col>
-      </el-row>
-    </div>
-
-    <div class="card" v-if="this.type===1">
-      <div class="card-img-hor" :style="{backgroundImage: 'url(\'' + article.cover.originalURL + '\')'}">
-        <div class="overlay card-body">
-          <h4 class="card-title">
-            <router-link :to="'/article/' + article.id" data-id="1" data-toggle="read" style="color: white">
-              {{article.title}}
-            </router-link>
-          </h4>
-          <div class="article-subtitle">by <a href="#">Wee</a> on {{createDateString}}</div>
-          <p class="card-text" style="color: white">{{preText}}}</p>
-          <div class="text-right">
-            <router-link :to="'/article/' + article.id" class="card-more" data-id="1" data-toggle="read"
-                         style="color: white">Read More <i
-                    class="ion-ios-arrow-right"></i></router-link>
-          </div>
-        </div>
+    <div class="card" v-if="(this.type === 'single' || this.type === 'double')">
+      <div class="card-img">
+        <el-image :src="article.cover.originalURL" class="card-img-content" fit="cover" />
       </div>
-    </div>
-
-    <div class="card" v-if="(this.type > 1)">
-      <div :class="{'card-img-hor':this.type===4,'card-img':type===2||type===3}"
-           :style="{backgroundImage: 'url(\'' + article.cover.originalURL + '\')'}">
-      </div>
-      <div class="card-body">
+      <div class="card-body shadow-border">
+        <div class="article-subtitle"> {{createDateString}} by <a href="#">Vaith</a></div>
         <h4 class="card-title">
           <router-link :to="'/article/' + article.id" data-id="1" data-toggle="read" style="color: black">
             {{article.title}}
           </router-link>
         </h4>
-        <div class="article-subtitle">by <a href="#">Wee</a> on {{createDateString}}</div>
-
         <p class="card-text">{{preText}}</p>
-        <div class="text-right">
-          <router-link :to="'/article/' + article.id" class="card-more" data-toggle="read" data-id="1">Read More <i
-                  class="ion-ios-arrow-right"></i></router-link>
-        </div>
+<!--        <div class="text-right">-->
+<!--          <router-link :to="'/article/' + article.id" class="card-more" data-toggle="read" data-id="1">Read More <i-->
+<!--                  class="ion-ios-arrow-right"></i></router-link>-->
+<!--        </div>-->
       </div>
     </div>
 
@@ -78,9 +31,9 @@
     props: {
       article: null,
       type: {
-        type: Number,
+        type: String,
         default() {
-          return 0;
+          return "single";
         }
       }
     },
@@ -93,14 +46,16 @@
         return month + "月 " + day + "日, " + year;
       },
       span() {
-        if (this.type === 1 || this.type === 0 || this.type === 4) {
-          return 24;
+        if (this.type === 'single') {
+          return 8;
+        } else if (this.type === 'double' || this.type === 'horizontal') {
+          return 16;
         } else {
-          return 12;
+          return 8;
         }
       },
       preText() {
-        return marker(this.article.content, { sanitize: true }).replace(/<[^>]+>/g, "").substr(0, 200);
+        return marker(this.article.content, { sanitize: true }).replace(/<[^>]+>/g, "").substr(0, 45);
       }
     }
   }
@@ -108,44 +63,42 @@
 
 <style scoped>
   .card {
+    position: relative;
     border: none;
-    box-shadow: 0 0 40px rgba(0, 0, 0, .05);
-    -webkit-box-shadow: 0 0 40px rgba(0, 0, 0, .05);
-    -moz-box-shadow: 0 0 40px rgba(0, 0, 0, .05);
-    -ms-box-shadow: 0 0 40px rgba(0, 0, 0, .05);
-    -o-box-shadow: 0 0 40px rgba(0, 0, 0, .05);
     margin-bottom: 30px;
-    overflow: hidden;
     text-align: left;
+    height: 390px;
+    /*overflow: hidden;*/
   }
 
 
   .card-img {
     width: 100%;
-    height: 0;
-    padding-top: 80%;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
+    position: relative;
+    top: 0;
+    overflow: hidden;
+
+  }
+
+  .card-img-content {
+    height: 250px;
+    transition: all .4s;
+  }
+
+  .card-img-content:hover {
+    transform: scale(1.1);
   }
 
 
   .card-img-hor {
     width: 100%;
     height: 370px;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
   }
 
 
   .card-title {
-    font-size: 30px;
-    line-height: 30px;
+    font-size: 28px;
+    line-height: 1.1;
     text-decoration: none;
     margin: 0;
   }
@@ -158,13 +111,15 @@
   .article-subtitle {
     font-size: 14px;
     color: #666;
-    margin-top: 16px;
+    margin-bottom: 16px;
   }
 
   .article-subtitle a {
-    color: #666;
+    color: black;
     border-bottom: 1px dotted #666;
     text-decoration: none;
+    font-weight: bold;
+
   }
 
   .card-text {
@@ -182,7 +137,20 @@
   }
 
   .card-body {
-    padding: 20px;
+    background: white;
+    width: 80%;
+    padding: 1em;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    min-height: 150px;
+  }
+
+  .card-body-right {
+    background: white;
+    height: 390px;
+    width: 100%;
+    padding: 1em;
   }
 
   .overlay {

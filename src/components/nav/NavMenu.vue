@@ -4,11 +4,11 @@
       'nav-horizontal': isHorizontal,
       'nav-vertical': !isHorizontal,
     }">
-      <nav-menu-item to="/home">HOME</nav-menu-item>
-      <nav-menu-item to="/blog">BLOG</nav-menu-item>
-      <nav-menu-item to="/event">EVENT</nav-menu-item>
-      <nav-menu-item to="/about">ABOUT ME</nav-menu-item>
-      <nav-menu-item to="/contact">CONTACT</nav-menu-item>
+      <nav-menu-item to="/home">首页/HOME</nav-menu-item>
+      <nav-menu-item to="/blog">博客/BLOG</nav-menu-item>
+      <nav-menu-item to="/event">事件/EVENT</nav-menu-item>
+      <nav-menu-item to="/about">关于/ABOUT ME</nav-menu-item>
+      <nav-menu-item to="/contact">联系/CONTACT</nav-menu-item>
     </ul>
   </div>
 </template>

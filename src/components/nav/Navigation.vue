@@ -19,6 +19,7 @@
                 :visible.sync="drawer"
                 direction="ttb"
                 :with-header="false"
+                size="230px"
                 :before-close="handleClose">
           <div style="width: 100%;height: 100%;text-align: left;padding-top: 30px">
             <nav-menu direction="vertical" />

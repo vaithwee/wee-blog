@@ -35,9 +35,9 @@
     methods: {
       type(index) {
         if (index % 5 === 4) {
-          return 'double';
+          return 'vd';
         } else  {
-          return 'single';
+          return 'vs';
         }
       }
     }

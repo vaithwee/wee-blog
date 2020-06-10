@@ -1,8 +1,11 @@
 <template>
   <el-col :xs="{'span':24}" :sm="{'span':span}" :md="{'span':span}">
-    <div class="card" v-if="(this.type === 'single' || this.type === 'double')">
+    <div class="card"
+         v-if="(this.type === 'vs' || this.type === 'vd' || this.type === 'vh' || this.type === 'va')"
+         :style="{'height':height + 'px'}"
+    >
       <div class="card-img">
-        <el-image :src="article.cover.originalURL" class="card-img-content" fit="cover" />
+        <el-image :src="article.cover.originalURL" class="card-img-content" fit="cover" :style="{'height':height * 0.75 + 'px'}" />
       </div>
       <div class="card-body shadow-border">
         <div class="article-subtitle"> {{createDateString}} by <a href="#">Vaith</a></div>
@@ -33,7 +36,7 @@
       type: {
         type: String,
         default() {
-          return "single";
+          return "vs"; //vs(vertical-single), vd(vertical-double), vh(vertical-half), va(vertical-all), ho(horizon)
         }
       }
     },
@@ -46,16 +49,33 @@
         return month + "月 " + day + "日, " + year;
       },
       span() {
-        if (this.type === 'single') {
+        if (this.type === 'vs') {
           return 8;
-        } else if (this.type === 'double' || this.type === 'horizontal') {
+        } else if (this.type === 'vd' || this.type === 'ho') {
           return 16;
+        } else if (this.type === 'va') {
+          return 24;
+        }else if (this.type === 'vh') {
+          return 12;
         } else {
           return 8;
         }
       },
       preText() {
         return marker(this.article.content, { sanitize: true }).replace(/<[^>]+>/g, "").substr(0, 45);
+      },
+      height() {
+        if (this.type === 'vs') {
+          return 390;
+        } else if (this.type === 'vd' || this.type === 'ho') {
+          return 390;
+        } else if (this.type === 'va') {
+          return 550;
+        }else if (this.type === 'vh') {
+          return 420;
+        } else {
+          return 390;
+        }
       }
     }
   }
@@ -67,7 +87,7 @@
     border: none;
     margin-bottom: 30px;
     text-align: left;
-    height: 390px;
+    /*height: 390px;*/
     /*overflow: hidden;*/
   }
 
@@ -81,7 +101,6 @@
   }
 
   .card-img-content {
-    height: 250px;
     transition: all .4s;
   }
 

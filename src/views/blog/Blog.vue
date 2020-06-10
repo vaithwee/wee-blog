@@ -1,8 +1,18 @@
 <template>
   <div class="content">
-    <ul >
-      <li v-for="i in 200" class="infinite-list-item">{{ i }}</li>
-    </ul>
+    <el-row :gutter="30">
+      <el-col :xs="{'span':24}" :sm="{'span':6, 'push':18}" :md="{'span':6,'push':18}">
+        <p>category</p>
+      </el-col>
+      <el-col :xs="{'span':24}" :sm="{'span':18, 'pull':6}" :md="{'span':18, 'pull':6}">
+        <el-row :gutter="30">
+          <home-article-list-item :article="item" v-for="(item, index) in list" :key="index" :type="index % 5 ===4 ? 'va' : 'vh'">
+          </home-article-list-item>
+        </el-row>
+      </el-col>
+
+
+    </el-row>
   </div>
 </template>
 
@@ -39,6 +49,7 @@
   .content {
     max-width: 1024px;
     margin: auto;
+    padding: 10px;
     /*overflow: hidden;*/
     /*position: absolute;*/
     /*top: 0;*/

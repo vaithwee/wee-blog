@@ -70,7 +70,7 @@
       }
     },
     mounted() {
-      const min = 600;
+      const min = 768;
       this.isMiniScreen = document.documentElement.clientWidth < min;
       const that = this;
       window.onresize = function tmp() {

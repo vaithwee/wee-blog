@@ -45,6 +45,9 @@
       ArticleAPI.getArticleList(this.page, this.size).then(res => {
         this.list = res.data.data;
       });
+      ArticleAPI.getAllCategory().then(res => {
+        console.log(res);
+      })
     },
     mounted() {
       this.$parent.$refs.nav.changeTransparent(false);

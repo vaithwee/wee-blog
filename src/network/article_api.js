@@ -14,6 +14,11 @@ let ArticleAPI = {
         size
       }
     });
+  },
+  getAllCategory() {
+    return request({
+      url: "/blog/category",
+    });
   }
 };
 

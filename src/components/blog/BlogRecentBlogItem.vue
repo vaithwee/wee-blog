@@ -1,6 +1,6 @@
 <template>
   <div class="blog-recent-blog-item-content">
-    <a href="#" class="blog-img" :style="{'background-image':'url(' + article.cover.previewURL + ')'}">
+    <a href="#" class="blog-img" :style="{'background-image':'url(' + article.cover.previewURL + ')', 'background-size':'cover'}">
     </a>
     <div class="desc">
       <h3><a href="#">{{article.title}}</a></h3>

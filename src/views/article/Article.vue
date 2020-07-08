@@ -1,32 +1,47 @@
 <template>
-  <scroll class="content">
-    <div v-if="article" style="max-width: 1024px;min-height:100%;margin: auto;text-align: left">
-      <h1 class="article-title">{{article.title}}</h1>
+  <div class="content">
 
-      <div class="article-subtitle mb-2 text-muted">by <a href="#">Wee</a> on {{createDateString}}</div>
+    <el-row :gutter="30">
+      <el-col :xs="{'span':24}" :sm="{'span':18}" :md="{'span':18}">
+        <div v-if="article" >
+          <h1 class="article-title">{{article.title}}</h1>
 
-      <div class="article-cover">
-        <el-image :src="article.cover.originalURL" fit="cover">
+          <div class="article-subtitle mb-2 text-muted">by <a href="#">Wee</a> on {{createDateString}}</div>
 
-        </el-image>
-      </div>
-      <div class="article-content">
-        <markdown :initialValue="article.content" theme="oneDark"/>
-      </div>
-    </div>
-  </scroll>
+          <div class="article-cover">
+            <el-image :src="article.cover.originalURL" fit="cover">
+
+            </el-image>
+          </div>
+          <div class="article-content">
+            <markdown :initialValue="article.content" theme="oneDark"/>
+          </div>
+        </div>
+      </el-col>
+      <el-col :xs="{'span':24}" :sm="{'span':6}" :md="{'span':6}">
+        <blog-category />
+        <blog-recent-blog />
+      </el-col>
+    </el-row>
+
+
+  </div>
 </template>
 
 <script>
   import Scroll from "@/components/Scroll";
   import markdown from "@/components/markdown/preview"
   import ArticleAPI from "../../network/article_api";
+  import BlogRecentBlog from "../../components/blog/BlogRecentBlog";
+  import BlogCategory from "../../components/blog/BlogCategory";
 
   export default {
     name: "BlogArticle",
     components: {
       Scroll,
       markdown,
+      BlogRecentBlog,
+      BlogCategory
     },
     data() {
       return {
@@ -57,13 +72,15 @@
 <style scoped>
   .content {
     overflow: hidden;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    text-align: left;
-    background-color: #f9f9f9;
+    margin: auto;
+    max-width: var(--wee-max-content-width);
+    /*position: absolute;*/
+    /*top: 0;*/
+    /*bottom: 0;*/
+    /*right: 0;*/
+    /*left: 0;*/
+    /*text-align: left;*/
+    background-color: white;
   }
 
   .article {
@@ -91,7 +108,7 @@
 
   .article-cover {
     margin-top: 30px;
-    max-height: 400px;
+    /*max-height: 400px;*/
     overflow: hidden;
   }
 
@@ -99,6 +116,6 @@
     text-align: left;
     /*padding-bottom: 30px;*/
     background-color: white;
-    padding: 20px;
+    padding: 40px;
   }
 </style>

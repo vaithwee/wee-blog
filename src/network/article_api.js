@@ -19,6 +19,11 @@ let ArticleAPI = {
     return request({
       url: "/blog/category",
     });
+  },
+  getRecentArticleList() {
+    return request({
+      url: "/blog/recent"
+    });
   }
 };
 

@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="blog-category-content">
     <h3 style="text-align: left">分类/Category</h3>
     <ul class="category">
       <li v-for="cate in categories"><a href="#"><i class="el-icon-check"></i>{{cate.name}}</a></li>
@@ -46,5 +46,9 @@
     padding: 5px 0;
     display: block;
     color: #4d4d4d;
+  }
+
+  .blog-category-content {
+    margin: 50px 0;
   }
 </style>

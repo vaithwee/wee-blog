@@ -101,7 +101,7 @@
 
   .nav-content {
     max-width: var(--wee-max-content-width);
-    height: 80px;
+    height: var(--wee-nav-height);
     width: 100%;
     margin: auto;
     padding-left: 10px;

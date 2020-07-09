@@ -1,31 +1,35 @@
 <template>
-  <div class="content">
+  <div>
+    <route-tip-view />
+    <div class="content">
 
-    <el-row :gutter="30">
-      <el-col :xs="{'span':24}" :sm="{'span':18}" :md="{'span':18}">
-        <div v-if="article" >
-          <h1 class="article-title">{{article.title}}</h1>
+      <el-row :gutter="30">
+        <el-col :xs="{'span':24}" :sm="{'span':18}" :md="{'span':18}">
+          <div v-if="article" >
+            <h1 class="article-title">{{article.title}}</h1>
 
-          <div class="article-subtitle mb-2 text-muted">by <a href="#">Wee</a> on {{createDateString}}</div>
+            <div class="article-subtitle mb-2 text-muted">by <a href="#">Wee</a> on {{createDateString}}</div>
 
-          <div class="article-cover">
-            <el-image :src="article.cover.originalURL" fit="cover">
+            <div class="article-cover">
+              <el-image :src="article.cover.originalURL" fit="cover">
 
-            </el-image>
+              </el-image>
+            </div>
+            <div class="article-content">
+              <markdown :initialValue="article.content" theme="oneDark"/>
+            </div>
           </div>
-          <div class="article-content">
-            <markdown :initialValue="article.content" theme="oneDark"/>
-          </div>
-        </div>
-      </el-col>
-      <el-col :xs="{'span':24}" :sm="{'span':6}" :md="{'span':6}">
-        <blog-category />
-        <blog-recent-blog />
-      </el-col>
-    </el-row>
+        </el-col>
+        <el-col :xs="{'span':24}" :sm="{'span':6}" :md="{'span':6}">
+          <blog-category />
+          <blog-recent-blog />
+        </el-col>
+      </el-row>
 
 
+    </div>
   </div>
+
 </template>
 
 <script>
@@ -34,6 +38,7 @@
   import ArticleAPI from "../../network/article_api";
   import BlogRecentBlog from "../../components/blog/BlogRecentBlog";
   import BlogCategory from "../../components/blog/BlogCategory";
+  import RouteTipView from "../../components/RouteTipView";
 
   export default {
     name: "BlogArticle",
@@ -41,7 +46,8 @@
       Scroll,
       markdown,
       BlogRecentBlog,
-      BlogCategory
+      BlogCategory,
+      RouteTipView,
     },
     data() {
       return {
@@ -64,22 +70,17 @@
       }
     },
     mounted() {
-      this.$parent.$refs.nav.changeTransparent(false);
+      // this.$parent.$refs.nav.changeTransparent(false);
     },
   }
 </script>
 
 <style scoped>
   .content {
-    overflow: hidden;
+    /*overflow: hidden;*/
+    padding: 40px;
     margin: auto;
     max-width: var(--wee-max-content-width);
-    /*position: absolute;*/
-    /*top: 0;*/
-    /*bottom: 0;*/
-    /*right: 0;*/
-    /*left: 0;*/
-    /*text-align: left;*/
     background-color: white;
   }
 
@@ -116,6 +117,6 @@
     text-align: left;
     /*padding-bottom: 30px;*/
     background-color: white;
-    padding: 40px;
+    /*padding: 40px;*/
   }
 </style>

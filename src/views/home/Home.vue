@@ -1,5 +1,6 @@
 <template>
-  <scroll @scroll="contentScroll" class="content" id="home">
+
+  <div @scroll="contentScroll" class="content" id="home">
     <section class="hero" ref="hero">
       <!--      <div class="overlay"></div>-->
       <div class="text">
@@ -16,7 +17,7 @@
     <home-article-list :list="articles"/>
     <!--    <home-testimonial/>-->
     <!--    <home-footer/>-->
-  </scroll>
+  </div>
 </template>
 
 <script>
@@ -56,7 +57,7 @@
     },
     methods: {
       contentScroll(position) {
-        let min = -(this.$refs.hero.offsetHeight - 87);
+        let min = -(this.$parent.$refs.scroll.offsetHeight - 87);
         if (position.y < min) {
           this.$parent.$refs.nav.changeTransparent(false);
         } else {
@@ -74,12 +75,6 @@
   }
 
   .content {
-    overflow: hidden;
-    position: absolute;
-    top: -80px;
-    bottom: 0;
-    right: 0;
-    left: 0;
     background-color: var(--wee-background-color);
   }
 
@@ -87,18 +82,15 @@
     height: var(--wee-home-height);
     text-align: center;
     color: white;
-    /*width: 100%;*/
     max-width: var(--wee-max-content-width);
-    /*background-color: red;*/
     margin: auto;
   }
 
   .hero {
+    margin-top: -80px;
     min-height: var(--wee-home-height);
     background-position: center;
-    /*background-attachment: fixed;*/
     background-size: cover;
-    /*overflow: auto;*/
   }
 
   .text h1 {

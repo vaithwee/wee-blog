@@ -1,10 +1,10 @@
 <template>
-  <div class="blog-recent-blog-item-content">
-    <a href="#" class="blog-img" :style="{'background-image':'url(' + article.cover.previewURL + ')', 'background-size':'cover'}">
+  <div class="rbi-content">
+    <a href="#" class="rbi-img" :style="{'background-image':'url(' + article.cover.previewURL + ')', 'background-size':'cover'}">
     </a>
-    <div class="desc">
+    <div class="rbi-desc">
       <h3><a href="#">{{article.title}}</a></h3>
-      <p class="admin"><span>{{createDateString}}</span></p>
+      <p class="rbi-date"><span>{{createDateString}}</span></p>
     </div>
   </div>
 </template>
@@ -18,6 +18,18 @@
         default() {
           return null;
         }
+      },
+      titleColor: {
+        type: String,
+        default() {
+          return null;
+        }
+      },
+      dateColor: {
+        type: String,
+        default() {
+          return null;
+        }
       }
     },
     computed: {
@@ -28,21 +40,25 @@
         let day = date.getDate();
         return month + "月 " + day + "日, " + year;
       },
+    },
+    created() {
+      console.log(this.dateColor);
+      console.log(this.titleColor);
     }
   }
 </script>
 
 <style scoped>
-  .blog-recent-blog-item-content {
+  .rbi-content {
     text-align: left;
     margin: 20px 0;
   }
 
-  .desc {
+  .rbi-desc {
     padding-left: 80px;
   }
 
-  .blog-img {
+  .rbi-img {
     position: relative;
     top: 0;
     left: 0;
@@ -51,17 +67,22 @@
     height: 60px;
     float: left; }
 
-  .desc h3 {
+  .rbi-desc h3 {
     font-size: 14px;
     margin-bottom: 5px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
   }
 
-  .desc h3 a {
+  .rbi-desc h3 a {
     color: #4d4d4d;
     text-decoration: none;
   }
 
-  .admin {
+  .rbi-date {
     font-size: 13px;
   }
 </style>

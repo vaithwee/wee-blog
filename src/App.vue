@@ -1,9 +1,10 @@
 <template>
   <div id="app">
     <navigation ref="nav"/>
-    <div class="app-content">
+    <scroll class="app-content" ref="scroll" @scroll="contentScroll" pt="80px">
       <router-view></router-view>
-    </div>
+      <footnote />
+    </scroll>
   </div>
 
 </template>
@@ -11,12 +12,26 @@
 <script>
 
   import Navigation from "./components/nav/Navigation";
+  import Scroll from "./components/Scroll";
+  import Footnote from "./components/Footnote";
 
   export default {
     name: 'App',
     components: {
       Navigation,
+      Scroll,
+      Footnote
     },
+    methods: {
+      contentScroll(position) {
+        let min = - 250;
+        if (position.y < min) {
+          this.$refs.nav.changeTransparent(false);
+        } else {
+          this.$refs.nav.changeTransparent(true);
+        }
+      }
+    }
   }
 </script>
 
@@ -45,10 +60,13 @@
 
   .app-content {
     position: absolute;
-    top: var(--wee-nav-height);;
+    overflow: hidden;
+    top: 0;
     bottom: 0;
-    margin: auto;
-    width: 100%;
+    left: 0;
+    right: 0;
+    padding-top: var(--wee-nav-height);
     background-color: var(--wee-background-color);
+    /*padding: ;*/
   }
 </style>

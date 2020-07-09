@@ -1,6 +1,6 @@
 <template>
   <div class="wrapper" ref="wrapper">
-    <div class="content">
+    <div class="content" :style="{'padding': pt + ' ' + pr + ' ' + pb + ' ' + pl }">
       <slot></slot>
     </div>
   </div>
@@ -17,7 +17,31 @@
         default() {
           return true;
         }
-      }
+      },
+      pt: {
+        type: String,
+        default() {
+          return "0";
+        }
+      },
+      pl: {
+        type: String,
+        default() {
+          return "0";
+        }
+      },
+      pr: {
+        type: String,
+        default() {
+          return "0";
+        }
+      },
+      pb: {
+        type: String,
+        default() {
+          return "0";
+        }
+      },
     },
     data() {
       return {

@@ -45,14 +45,12 @@
 </template>
 
 <script>
-  import BlogRecentBlog from "./blog/BlogRecentBlog";
-  import ArticleAPI from "../network/article_api";
   import BlogRecentBlogItem from "./blog/BlogRecentBlogItem";
+  import AppAPI from "../network/app_api";
 
   export default {
     name: "Footnote",
     components: {
-      BlogRecentBlog,
       BlogRecentBlogItem
     },
     data() {
@@ -63,14 +61,11 @@
       };
     },
     created() {
-      ArticleAPI.getRecentArticleList().then(res => {
-        this.recent = res.data;
-      });
-      ArticleAPI.getArchiveList().then(res => {
-        this.archive = res.data;
-      });
-      ArticleAPI.getTagList().then(res => {
-        this.tag = res.data;
+      AppAPI.getFootnote().then(res => {
+        console.log(res);
+        this.recent = res.data.articles;
+        this.archive = res.data.archives;
+        this.tag = res.data.tags;
       });
     }
   }
@@ -80,7 +75,7 @@
 
   .content {
     background: #212121;
-    min-height: 650px;
+    min-height: 450px;
   }
 
   .footer {
@@ -96,6 +91,7 @@
     font-weight: 300;
     color: #666666;
     text-align: center;
+    margin-top: 30px;
   }
 
   .copyright a {

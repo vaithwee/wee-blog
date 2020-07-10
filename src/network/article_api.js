@@ -25,16 +25,6 @@ let ArticleAPI = {
       url: "/blog/recent"
     });
   },
-  getArchiveList() {
-    return request({
-      url: "/blog/archive"
-    });
-  },
-  getTagList() {
-    return request({
-      url: "/blog/tags"
-    });
-  }
 };
 
 export default ArticleAPI;

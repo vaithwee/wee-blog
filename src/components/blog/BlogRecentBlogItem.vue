@@ -3,8 +3,8 @@
     <a href="#" class="rbi-img" :style="{'background-image':'url(' + article.cover.previewURL + ')', 'background-size':'cover'}">
     </a>
     <div class="rbi-desc">
-      <h3><a href="#">{{article.title}}</a></h3>
-      <p class="rbi-date"><span>{{createDateString}}</span></p>
+      <h3 ><a href="#" :style="{'color':titleColor}">{{article.title}}</a></h3>
+      <p class="rbi-date"><span :style="{'color':dateColor}">{{createDateString}}</span></p>
     </div>
   </div>
 </template>
@@ -16,13 +16,13 @@
       article: {
         type: Object,
         default() {
-          return null;
+          return "black";
         }
       },
       titleColor: {
         type: String,
         default() {
-          return null;
+          return "#4d4d4d";
         }
       },
       dateColor: {
@@ -78,7 +78,6 @@
   }
 
   .rbi-desc h3 a {
-    color: #4d4d4d;
     text-decoration: none;
   }
 

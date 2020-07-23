@@ -20,13 +20,13 @@
         <el-col :xs="{'span':24}" :sm="{'span':6}" :md="{'span':6}">
           <h2 class="footer-title">ARCHIVE</h2>
           <ul class="footer-archive">
-            <li v-for="a in archive"><a href="#"><i class="el-icon-check"></i>{{a.slice(0, 4) + '年' + a.slice(4) + '月'}}</a></li>
+            <li v-for="a in archive"><router-link :to="'search?keyword=archive:' + a"><i class="el-icon-check"></i>{{a.slice(0, 4) + '年' + a.slice(4) + '月'}}</router-link></li>
           </ul>
         </el-col>
         <el-col :xs="{'span':24}" :sm="{'span':6}" :md="{'span':6}">
           <h2 class="footer-title">TAGS</h2>
           <p class="footer-tags">
-            <span v-for="t in tag"><a href="#"><i class="el-icon-collection-tag"></i>{{t.name}}</a></span>
+            <span v-for="t in tag"><router-link :to="'search?keyword=tag:' + t.name"><i class="el-icon-collection-tag"></i>{{t.name}}</router-link></span>
           </p>
         </el-col>
       </el-row>

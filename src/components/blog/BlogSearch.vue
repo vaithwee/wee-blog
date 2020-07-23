@@ -11,7 +11,7 @@
     methods: {
       searchBlog() {
         let keyword = this.$refs.input.value;
-        this.$router.push("search/" + keyword);
+        this.$router.push("search?keyword=" + keyword);
       }
     }
   }

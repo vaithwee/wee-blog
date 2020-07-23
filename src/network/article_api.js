@@ -25,6 +25,17 @@ let ArticleAPI = {
       url: "/blog/recent"
     });
   },
+
+  searchBlog(keyword, page, size) {
+    return request({
+      url: "/blog/search",
+      params: {
+        keyword,
+        page,
+        size,
+      }
+    });
+  },
 };
 
 export default ArticleAPI;

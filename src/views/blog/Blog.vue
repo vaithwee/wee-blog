@@ -11,6 +11,7 @@
           </el-row>
         </el-col>
         <el-col :xs="{'span':24}" :sm="{'span':6}" :md="{'span':6}">
+          <blog-search />
           <blog-category />
           <blog-recent-blog />
         </el-col>
@@ -27,6 +28,7 @@
   import RouteTipView from "../../components/RouteTipView";
   import BlogCategory from "../../components/blog/BlogCategory";
   import BlogRecentBlog from "../../components/blog/BlogRecentBlog";
+  import BlogSearch from "../../components/blog/BlogSearch";
 
   export default {
     name: "Blog",
@@ -35,7 +37,8 @@
       HomeArticleListItem,
       RouteTipView,
       BlogCategory,
-      BlogRecentBlog
+      BlogRecentBlog,
+      BlogSearch,
     },
     data() {
       return {

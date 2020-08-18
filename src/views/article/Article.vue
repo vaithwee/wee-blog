@@ -11,7 +11,7 @@
             <div class="article-subtitle mb-2 text-muted">by <a href="#">Wee</a> on {{createDateString}}</div>
 
             <div class="article-cover">
-              <el-image :src="article.cover.originalURL" fit="cover">
+              <el-image :src="article.cover.originalURL" style="width: 100%; max-height: 450px" fit="cover">
 
               </el-image>
             </div>
@@ -21,6 +21,7 @@
           </div>
         </el-col>
         <el-col :xs="{'span':24}" :sm="{'span':6}" :md="{'span':6}">
+          <blog-search />
           <blog-category />
           <blog-recent-blog />
         </el-col>
@@ -39,6 +40,7 @@
   import BlogRecentBlog from "../../components/blog/BlogRecentBlog";
   import BlogCategory from "../../components/blog/BlogCategory";
   import RouteTipView from "../../components/RouteTipView";
+  import BlogSearch from "../../components/blog/BlogSearch";
 
   export default {
     name: "BlogArticle",
@@ -48,6 +50,7 @@
       BlogRecentBlog,
       BlogCategory,
       RouteTipView,
+      BlogSearch,
     },
     data() {
       return {
@@ -109,8 +112,9 @@
 
   .article-cover {
     margin-top: 30px;
-    /*max-height: 400px;*/
+    max-height: 400px;
     overflow: hidden;
+    /*background-color: red;*/
   }
 
   .article-content {

@@ -2,7 +2,7 @@
   <div class="blog-category-content">
     <h3 style="text-align: left">分类/Category</h3>
     <ul class="category">
-      <li v-for="cate in categories"><router-link :to="'search?keyword=cate:' + cate.name"><i class="el-icon-check"></i>{{cate.name}}</router-link></li>
+      <li v-for="cate in categories"><router-link :to="'/search?keyword=cate:' + cate.name"><i class="el-icon-check"></i>{{cate.name}}</router-link></li>
     </ul>
   </div>
 </template>

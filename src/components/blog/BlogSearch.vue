@@ -23,6 +23,7 @@
     display: flex;
     padding: 10px 10px;
   }
+
   .bs-input {
     width: 100%;
     border: 1px solid #f0f0f0;

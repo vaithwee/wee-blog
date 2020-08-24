@@ -1,6 +1,6 @@
 <template>
   <div>
-    <route-tip-view />
+    <route-tip-view/>
     <div class="content">
       <home-article-list :list="list"/>
 
@@ -13,6 +13,7 @@
   import HomeArticleList from "../../components/home/HomeArticleList";
   import ArticleAPI from "../../network/article_api";
   import HomeArticleListItem from "../../components/home/HomeArticleListItem";
+
   export default {
     name: "serach",
     components: {
@@ -22,18 +23,23 @@
     },
     data() {
       return {
-        list:[],
+        list: [],
       };
     },
     created() {
-      let keyword = this.$route.query.keyword;
-      this.searchArticleByKeyword(keyword);
+      this.searchArticleByKeyword();
     },
     methods: {
-      searchArticleByKeyword(keyword) {
-        ArticleAPI.searchBlog(keyword, 0, 20).then(res=> {
+      searchArticleByKeyword() {
+        let keyword = this.$route.query.keyword;
+        ArticleAPI.searchBlog(keyword, 0, 20).then(res => {
           this.list = res.data.data;
         })
+      }
+    },
+    watch: {
+      '$route'(from, to) {
+        this.searchArticleByKeyword();
       }
     }
   }

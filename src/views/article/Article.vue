@@ -1,11 +1,11 @@
 <template>
   <div>
-    <route-tip-view />
+    <route-tip-view/>
     <div class="content">
 
       <el-row :gutter="30">
         <el-col :xs="{'span':24}" :sm="{'span':18}" :md="{'span':18}">
-          <div v-if="article" >
+          <div v-if="article">
             <h1 class="article-title">{{article.title}}</h1>
 
             <div class="article-subtitle mb-2 text-muted">by <a href="#">Wee</a> on {{createDateString}}</div>
@@ -21,9 +21,9 @@
           </div>
         </el-col>
         <el-col :xs="{'span':24}" :sm="{'span':6}" :md="{'span':6}">
-          <blog-search />
-          <blog-category />
-          <blog-recent-blog />
+          <blog-search/>
+          <blog-category/>
+          <blog-recent-blog/>
         </el-col>
       </el-row>
 
@@ -58,10 +58,7 @@
       }
     },
     created() {
-      let id = this.$route.params.id;
-      ArticleAPI.getArticleDetail(id).then(res => {
-        this.article = res.data;
-      })
+      this.refreshData();
     },
     computed: {
       createDateString() {
@@ -72,9 +69,23 @@
         return month + "月 " + day + "日, " + year;
       }
     },
+
+    methods: {
+      refreshData() {
+        let id = this.$route.params.id;
+        ArticleAPI.getArticleDetail(id).then(res => {
+          this.article = res.data;
+        })
+      }
+    },
     mounted() {
       // this.$parent.$refs.nav.changeTransparent(false);
     },
+    watch: {
+      '$route'(to, from) {
+        this.refreshData();
+      }
+    }
   }
 </script>
 
@@ -112,7 +123,7 @@
 
   .article-cover {
     margin-top: 30px;
-    max-height: 400px;
+    max-height: 50vh;
     overflow: hidden;
     /*background-color: red;*/
   }

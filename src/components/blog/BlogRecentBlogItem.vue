@@ -1,9 +1,14 @@
 <template>
   <div class="rbi-content">
-    <a href="#" class="rbi-img" :style="{'background-image':'url(' + article.cover.previewURL + ')', 'background-size':'cover'}">
+    <a href="#" class="rbi-img"
+       :style="{'background-image':'url(' + article.cover.previewURL + ')', 'background-size':'cover'}">
     </a>
     <div class="rbi-desc">
-      <h3 ><a href="#" :style="{'color':titleColor}">{{article.title}}</a></h3>
+      <h3>
+        <router-link :to="'/article/' + article.id" data-id="1" data-toggle="read" :style="{'color':titleColor}">
+          {{article.title}}
+        </router-link>
+      </h3>
       <p class="rbi-date"><span :style="{'color':dateColor}">{{createDateString}}</span></p>
     </div>
   </div>
@@ -65,7 +70,8 @@
     display: block;
     width: 70px;
     height: 60px;
-    float: left; }
+    float: left;
+  }
 
   .rbi-desc h3 {
     font-size: 14px;

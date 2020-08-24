@@ -2,7 +2,7 @@
   <div class="content">
     <div class="footer">
       <el-row :gutter="30">
-        <el-col :xs="{'span':24}" :sm="{'span':6}" :md="{'span':6}">
+        <el-col class="footer-content" :xs="{'span':24}" :sm="{'span':6}" :md="{'span':6}">
           <div>
             <h2 class="footer-title">NAVIGATIONAL</h2>
             <ul class="footer-nav">
@@ -17,12 +17,12 @@
             </ul>
           </div>
         </el-col>
-        <el-col :xs="{'span':24}" :sm="{'span':6}" :md="{'span':6}">
+        <el-col class="footer-content" :xs="{'span':24}" :sm="{'span':6}" :md="{'span':6}">
           <h2 class="footer-title">RECENT BLOG</h2>
           <blog-recent-blog-item v-for="article in recent" :article="article" title-color="#b3b3b3"
                                  date-color="#666666"/>
         </el-col>
-        <el-col :xs="{'span':24}" :sm="{'span':6}" :md="{'span':6}">
+        <el-col class="footer-content" :xs="{'span':24}" :sm="{'span':6}" :md="{'span':6}">
           <h2 class="footer-title">ARCHIVE</h2>
           <ul class="footer-archive">
             <li v-for="a in archive">
@@ -32,7 +32,7 @@
             </li>
           </ul>
         </el-col>
-        <el-col :xs="{'span':24}" :sm="{'span':6}" :md="{'span':6}">
+        <el-col class="footer-content" :xs="{'span':24}" :sm="{'span':6}" :md="{'span':6}">
           <h2 class="footer-title">TAGS</h2>
           <p class="footer-tags">
             <span v-for="t in tag"><router-link :to="'/search?keyword=tag:' + t.name"><i
@@ -184,5 +184,9 @@
     background-color: red;
     color: white;
     box-shadow: 0 2px 10px -5px rgba(0, 0, 0, 1);
+  }
+
+  .footer-content {
+    margin-bottom: 40px;
   }
 </style>

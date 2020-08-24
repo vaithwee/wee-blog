@@ -16,3 +16,37 @@
 .hidden {
     display: none;
 }
+
+/*search*/
+.bs-content {
+    display: flex;
+    padding: 10px 10px;
+}
+
+.bs-input {
+    width: 100%;
+    border: 1px solid #f0f0f0;
+    /*line-height: 1.8;*/
+    flex: 1;
+    padding: 10px 10px;
+
+}
+
+.bs-input:focus, .bs-input:active {
+    border: 1px solid #f0f0f0;
+    outline: none;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.bs-button {
+    height: 40px;
+    border: 1px solid #F6490D;
+    background-color: #F6490D;
+    color: white;
+}
+
+.bs-button:focus, .bs-button:active {
+    border: 1px solid #F6490D;
+    outline: none;
+    /*background-color: rgba(0, 0, 0, 0);*/
+}

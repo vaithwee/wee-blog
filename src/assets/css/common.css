@@ -17,6 +17,15 @@
     display: none;
 }
 
+/*content*/
+.component-content {
+    /*overflow: hidden;*/
+    padding: 40px 10px;
+    margin: auto;
+    max-width: var(--wee-max-content-width);
+    background-color: white;
+}
+
 /*search*/
 .bs-content {
     display: flex;

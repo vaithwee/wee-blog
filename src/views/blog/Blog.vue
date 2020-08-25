@@ -1,7 +1,7 @@
 <template>
   <div>
     <route-tip-view />
-    <div class="content">
+    <div class="component-content">
 
       <el-row :gutter="30">
         <el-col :xs="{'span':24}" :sm="{'span':18}" :md="{'span':18}">
@@ -54,7 +54,7 @@
 
     },
     mounted() {
-      this.$parent.$refs.nav.changeTransparent(false);
+
     },
   }
 </script>

@@ -1,7 +1,7 @@
 <template>
   <div>
     <route-tip-view/>
-    <div class="content">
+    <div class="component-content">
 
       <el-row :gutter="30">
         <el-col :xs="{'span':24}" :sm="{'span':18}" :md="{'span':18}">
@@ -79,7 +79,7 @@
       }
     },
     mounted() {
-      // this.$parent.$refs.nav.changeTransparent(false);
+
     },
     watch: {
       '$route'(to, from) {
@@ -92,7 +92,7 @@
 <style scoped>
   .content {
     /*overflow: hidden;*/
-    padding: 40px;
+    padding: 40px 10px;
     margin: auto;
     max-width: var(--wee-max-content-width);
     background-color: white;

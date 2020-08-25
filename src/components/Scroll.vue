@@ -67,7 +67,12 @@
 
     },
     methods: {},
-    computed: {}
+    computed: {},
+    watch: {
+      '$route' (from, to) {
+        this.scroll.scrollTo(0, 0);
+      }
+    }
   }
 </script>
 

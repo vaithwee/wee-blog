@@ -72,7 +72,6 @@
     },
     created() {
       AppAPI.getFootnote().then(res => {
-        console.log(res);
         this.recent = res.data.articles;
         this.archive = res.data.archives;
         this.tag = res.data.tags;

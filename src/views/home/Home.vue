@@ -52,7 +52,6 @@
       });
     },
     mounted() {
-      this.$parent.$refs.nav.changeTransparent(true);
 
     },
     methods: {

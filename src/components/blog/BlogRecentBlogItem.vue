@@ -47,8 +47,7 @@
       },
     },
     created() {
-      console.log(this.dateColor);
-      console.log(this.titleColor);
+
     }
   }
 </script>

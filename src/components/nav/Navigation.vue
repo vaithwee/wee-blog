@@ -76,6 +76,16 @@
       window.onresize = function tmp() {
         that.isMiniScreen = document.documentElement.clientWidth < min;
       }
+    },
+    watch: {
+      '$route' (to, from) {
+        console.log(to);
+        if (to.name === 'home') {
+          this.changeTransparent(true);
+        } else  {
+          this.changeTransparent(false)
+        }
+      }
     }
   }
 </script>

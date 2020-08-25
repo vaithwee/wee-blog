@@ -1,7 +1,7 @@
 <template>
   <div>
     <route-tip-view/>
-    <div class="content">
+    <div class="component-content">
       <div class="bs-content">
         <div class="shadow-border sr-content">
           <div style="flex: 1">

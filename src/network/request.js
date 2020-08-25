@@ -27,7 +27,6 @@ export function request(config) {
   info = JSONUtil.sort(info);
   let infoSSign = SecurityUtil.encryptJsonToMD5(SecurityConfig.accessKey, info);
   let bodySign = "";
-  console.log(typeof config.data);
   if (config.data !== undefined) {
     let data = JSONUtil.sort(config.data);
     bodySign = SecurityUtil.MD5(JSON.stringify(data));

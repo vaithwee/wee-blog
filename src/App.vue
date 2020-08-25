@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <navigation ref="nav"/>
-    <scroll class="app-content" ref="scroll" pt="80px">
+    <scroll class="app-content" ref="scroll" pt="80px" @scroll="contentScroll">
       <router-view></router-view>
       <footnote />
     </scroll>
@@ -23,7 +23,18 @@
       Footnote
     },
     methods: {
+      contentScroll(position) {
+        if (this.$route.name === 'home') {
+          if (position.y < -130) {
+            this.$refs.nav.changeTransparent(false);
+          } else {
+            this.$refs.nav.changeTransparent(true);
+          }
+        } else {
+          this.$refs.nav.changeTransparent(false);
+        }
 
+      }
     }
   }
 </script>

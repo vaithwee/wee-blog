@@ -1,6 +1,6 @@
 <template>
 
-  <div @scroll="contentScroll" class="content" id="home">
+  <div  class="content" id="home">
     <section class="hero" ref="hero">
       <!--      <div class="overlay"></div>-->
       <div class="text">
@@ -44,9 +44,11 @@
     },
     created() {
       HomeAPI.getHomeInfo().then(res => {
+        console.log(res);
         this.greeting = res.data.info.greeting;
         this.backgroundImage = res.data.info.cover.originalURL;
         this.articles = res.data.blog;
+        console.log(this.articles);
         this.$refs.hero.setAttribute('style', 'background-image:url(' + res.data.info.cover.originalURL + ')')
       });
     },
@@ -54,14 +56,7 @@
 
     },
     methods: {
-      contentScroll(position) {
-        let min = -(this.$parent.$refs.scroll.offsetHeight - 87);
-        if (position.y < min) {
-          this.$parent.$refs.nav.changeTransparent(false);
-        } else {
-          this.$parent.$refs.nav.changeTransparent(true);
-        }
-      }
+
     }
   }
 </script>
